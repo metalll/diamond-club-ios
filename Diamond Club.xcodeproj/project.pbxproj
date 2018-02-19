@@ -13,6 +13,17 @@
 		D79B577F203AF7FB006687A2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D79B577D203AF7FB006687A2 /* Main.storyboard */; };
 		D79B5781203AF7FB006687A2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D79B5780203AF7FB006687A2 /* Assets.xcassets */; };
 		D79B5784203AF7FB006687A2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D79B5782203AF7FB006687A2 /* LaunchScreen.storyboard */; };
+		D79B5793203B0041006687A2 /* AdminMainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D79B5792203B0041006687A2 /* AdminMainViewController.swift */; };
+		D79B5795203B0059006687A2 /* BuyerMainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D79B5794203B0059006687A2 /* BuyerMainViewController.swift */; };
+		D79B5797203B0068006687A2 /* ContrAgentMainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D79B5796203B0068006687A2 /* ContrAgentMainViewController.swift */; };
+		D79B579A203B01F0006687A2 /* AdminMenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D79B5798203B01F0006687A2 /* AdminMenuViewController.swift */; };
+		D79B579B203B01F0006687A2 /* AdminMenuViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = D79B5799203B01F0006687A2 /* AdminMenuViewController.xib */; };
+		D79B579E203B034C006687A2 /* AdminHomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D79B579C203B034C006687A2 /* AdminHomeViewController.swift */; };
+		D79B579F203B034C006687A2 /* AdminHomeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = D79B579D203B034C006687A2 /* AdminHomeViewController.xib */; };
+		D79B57A2203B03B8006687A2 /* AdminRightViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D79B57A0203B03B8006687A2 /* AdminRightViewController.swift */; };
+		D79B57A3203B03B8006687A2 /* AdminRightViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = D79B57A1203B03B8006687A2 /* AdminRightViewController.xib */; };
+		D79B57A5203B04A7006687A2 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D79B57A4203B04A7006687A2 /* LoginViewController.swift */; };
+		D79B57A8203B04D5006687A2 /* RegistrationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D79B57A7203B04D5006687A2 /* RegistrationViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +37,17 @@
 		D79B5780203AF7FB006687A2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D79B5783203AF7FB006687A2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		D79B5785203AF7FB006687A2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D79B5792203B0041006687A2 /* AdminMainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdminMainViewController.swift; sourceTree = "<group>"; };
+		D79B5794203B0059006687A2 /* BuyerMainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BuyerMainViewController.swift; sourceTree = "<group>"; };
+		D79B5796203B0068006687A2 /* ContrAgentMainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContrAgentMainViewController.swift; sourceTree = "<group>"; };
+		D79B5798203B01F0006687A2 /* AdminMenuViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdminMenuViewController.swift; sourceTree = "<group>"; };
+		D79B5799203B01F0006687A2 /* AdminMenuViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AdminMenuViewController.xib; sourceTree = "<group>"; };
+		D79B579C203B034C006687A2 /* AdminHomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdminHomeViewController.swift; sourceTree = "<group>"; };
+		D79B579D203B034C006687A2 /* AdminHomeViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AdminHomeViewController.xib; sourceTree = "<group>"; };
+		D79B57A0203B03B8006687A2 /* AdminRightViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdminRightViewController.swift; sourceTree = "<group>"; };
+		D79B57A1203B03B8006687A2 /* AdminRightViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AdminRightViewController.xib; sourceTree = "<group>"; };
+		D79B57A4203B04A7006687A2 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		D79B57A7203B04D5006687A2 /* RegistrationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrationViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -78,6 +100,7 @@
 		D79B5778203AF7FB006687A2 /* Diamond Club */ = {
 			isa = PBXGroup;
 			children = (
+				D79B57A6203B04AE006687A2 /* Auth */,
 				D79B5791203AFA75006687A2 /* Admin */,
 				D79B5790203AFA5C006687A2 /* Buyer */,
 				D79B578F203AFA48006687A2 /* ContrAgent */,
@@ -94,6 +117,7 @@
 		D79B578F203AFA48006687A2 /* ContrAgent */ = {
 			isa = PBXGroup;
 			children = (
+				D79B5796203B0068006687A2 /* ContrAgentMainViewController.swift */,
 			);
 			path = ContrAgent;
 			sourceTree = "<group>";
@@ -101,6 +125,7 @@
 		D79B5790203AFA5C006687A2 /* Buyer */ = {
 			isa = PBXGroup;
 			children = (
+				D79B5794203B0059006687A2 /* BuyerMainViewController.swift */,
 			);
 			path = Buyer;
 			sourceTree = "<group>";
@@ -108,8 +133,24 @@
 		D79B5791203AFA75006687A2 /* Admin */ = {
 			isa = PBXGroup;
 			children = (
+				D79B5792203B0041006687A2 /* AdminMainViewController.swift */,
+				D79B5798203B01F0006687A2 /* AdminMenuViewController.swift */,
+				D79B5799203B01F0006687A2 /* AdminMenuViewController.xib */,
+				D79B579C203B034C006687A2 /* AdminHomeViewController.swift */,
+				D79B579D203B034C006687A2 /* AdminHomeViewController.xib */,
+				D79B57A0203B03B8006687A2 /* AdminRightViewController.swift */,
+				D79B57A1203B03B8006687A2 /* AdminRightViewController.xib */,
 			);
 			path = Admin;
+			sourceTree = "<group>";
+		};
+		D79B57A6203B04AE006687A2 /* Auth */ = {
+			isa = PBXGroup;
+			children = (
+				D79B57A4203B04A7006687A2 /* LoginViewController.swift */,
+				D79B57A7203B04D5006687A2 /* RegistrationViewController.swift */,
+			);
+			path = Auth;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -175,8 +216,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				D79B5784203AF7FB006687A2 /* LaunchScreen.storyboard in Resources */,
+				D79B579B203B01F0006687A2 /* AdminMenuViewController.xib in Resources */,
 				D79B5781203AF7FB006687A2 /* Assets.xcassets in Resources */,
 				D79B577F203AF7FB006687A2 /* Main.storyboard in Resources */,
+				D79B579F203B034C006687A2 /* AdminHomeViewController.xib in Resources */,
+				D79B57A3203B03B8006687A2 /* AdminRightViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -241,8 +285,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D79B57A5203B04A7006687A2 /* LoginViewController.swift in Sources */,
+				D79B5797203B0068006687A2 /* ContrAgentMainViewController.swift in Sources */,
 				D79B577C203AF7FB006687A2 /* ViewController.swift in Sources */,
+				D79B5793203B0041006687A2 /* AdminMainViewController.swift in Sources */,
+				D79B57A8203B04D5006687A2 /* RegistrationViewController.swift in Sources */,
 				D79B577A203AF7FB006687A2 /* AppDelegate.swift in Sources */,
+				D79B579E203B034C006687A2 /* AdminHomeViewController.swift in Sources */,
+				D79B5795203B0059006687A2 /* BuyerMainViewController.swift in Sources */,
+				D79B579A203B01F0006687A2 /* AdminMenuViewController.swift in Sources */,
+				D79B57A2203B03B8006687A2 /* AdminRightViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
