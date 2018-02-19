@@ -54,6 +54,9 @@
 		D79B5778203AF7FB006687A2 /* Diamond Club */ = {
 			isa = PBXGroup;
 			children = (
+				D79B5791203AFA75006687A2 /* Admin */,
+				D79B5790203AFA5C006687A2 /* Buyer */,
+				D79B578F203AFA48006687A2 /* ContrAgent */,
 				D79B5779203AF7FB006687A2 /* AppDelegate.swift */,
 				D79B577B203AF7FB006687A2 /* ViewController.swift */,
 				D79B577D203AF7FB006687A2 /* Main.storyboard */,
@@ -62,6 +65,27 @@
 				D79B5785203AF7FB006687A2 /* Info.plist */,
 			);
 			path = "Diamond Club";
+			sourceTree = "<group>";
+		};
+		D79B578F203AFA48006687A2 /* ContrAgent */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ContrAgent;
+			sourceTree = "<group>";
+		};
+		D79B5790203AFA5C006687A2 /* Buyer */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Buyer;
+			sourceTree = "<group>";
+		};
+		D79B5791203AFA75006687A2 /* Admin */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Admin;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
