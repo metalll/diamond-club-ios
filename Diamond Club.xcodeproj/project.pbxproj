@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		29E418A5E5E6C3D3CAA1D4AF /* Pods_Diamond_Club.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7902ADCCFBCF4C53EB4D35CF /* Pods_Diamond_Club.framework */; };
 		D79B577A203AF7FB006687A2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D79B5779203AF7FB006687A2 /* AppDelegate.swift */; };
 		D79B577C203AF7FB006687A2 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D79B577B203AF7FB006687A2 /* ViewController.swift */; };
 		D79B577F203AF7FB006687A2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D79B577D203AF7FB006687A2 /* Main.storyboard */; };
@@ -15,6 +16,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		453DC9C4B7B478862508FE29 /* Pods-Diamond Club.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Diamond Club.release.xcconfig"; path = "Pods/Target Support Files/Pods-Diamond Club/Pods-Diamond Club.release.xcconfig"; sourceTree = "<group>"; };
+		7902ADCCFBCF4C53EB4D35CF /* Pods_Diamond_Club.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Diamond_Club.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		9EB26B9E585CFD98A6221E80 /* Pods-Diamond Club.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Diamond Club.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Diamond Club/Pods-Diamond Club.debug.xcconfig"; sourceTree = "<group>"; };
 		D79B5776203AF7FB006687A2 /* Diamond Club.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Diamond Club.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		D79B5779203AF7FB006687A2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D79B577B203AF7FB006687A2 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -29,17 +33,37 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				29E418A5E5E6C3D3CAA1D4AF /* Pods_Diamond_Club.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		3766D93DF8214C5E92ADA061 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				9EB26B9E585CFD98A6221E80 /* Pods-Diamond Club.debug.xcconfig */,
+				453DC9C4B7B478862508FE29 /* Pods-Diamond Club.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		CE8F73B92E25A1E08D9B4AF8 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				7902ADCCFBCF4C53EB4D35CF /* Pods_Diamond_Club.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		D79B576D203AF7FB006687A2 = {
 			isa = PBXGroup;
 			children = (
 				D79B5778203AF7FB006687A2 /* Diamond Club */,
 				D79B5777203AF7FB006687A2 /* Products */,
+				3766D93DF8214C5E92ADA061 /* Pods */,
+				CE8F73B92E25A1E08D9B4AF8 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -95,9 +119,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = D79B5788203AF7FB006687A2 /* Build configuration list for PBXNativeTarget "Diamond Club" */;
 			buildPhases = (
+				B92BA88F0857F226DD01BC41 /* [CP] Check Pods Manifest.lock */,
 				D79B5772203AF7FB006687A2 /* Sources */,
 				D79B5773203AF7FB006687A2 /* Frameworks */,
 				D79B5774203AF7FB006687A2 /* Resources */,
+				E21CAECA0165E70E4EEAF989 /* [CP] Embed Pods Frameworks */,
+				9007A054051E135DFF8A2D58 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -154,6 +181,60 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		9007A054051E135DFF8A2D58 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Diamond Club/Pods-Diamond Club-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B92BA88F0857F226DD01BC41 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Diamond Club-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E21CAECA0165E70E4EEAF989 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-Diamond Club/Pods-Diamond Club-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/SlideMenuControllerSwift/SlideMenuControllerSwift.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SlideMenuControllerSwift.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Diamond Club/Pods-Diamond Club-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		D79B5772203AF7FB006687A2 /* Sources */ = {
@@ -296,6 +377,7 @@
 		};
 		D79B5789203AF7FB006687A2 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9EB26B9E585CFD98A6221E80 /* Pods-Diamond Club.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -311,6 +393,7 @@
 		};
 		D79B578A203AF7FB006687A2 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 453DC9C4B7B478862508FE29 /* Pods-Diamond Club.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
