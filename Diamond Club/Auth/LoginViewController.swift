@@ -9,14 +9,15 @@
 import UIKit
 
 class LoginViewController: UIViewController {
-
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+        AuthorizationController.sharedInstance.authorize(login: "", password: "") { (isSuccess:Bool) in
+            
+        }
     }
-
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
-    
     }
-
 }

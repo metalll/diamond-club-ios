@@ -8,6 +8,10 @@
 
 /* Begin PBXBuildFile section */
 		29E418A5E5E6C3D3CAA1D4AF /* Pods_Diamond_Club.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7902ADCCFBCF4C53EB4D35CF /* Pods_Diamond_Club.framework */; };
+		D73D7E14203B172B00AC7C75 /* AuthorizationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D73D7E13203B172B00AC7C75 /* AuthorizationController.swift */; };
+		D73D7E16203B1DA900AC7C75 /* Admin.swift in Sources */ = {isa = PBXBuildFile; fileRef = D73D7E15203B1DA900AC7C75 /* Admin.swift */; };
+		D73D7E18203B1DC100AC7C75 /* Buyer.swift in Sources */ = {isa = PBXBuildFile; fileRef = D73D7E17203B1DC100AC7C75 /* Buyer.swift */; };
+		D73D7E1A203B1EEF00AC7C75 /* ContrAgent.swift in Sources */ = {isa = PBXBuildFile; fileRef = D73D7E19203B1EEF00AC7C75 /* ContrAgent.swift */; };
 		D79B577A203AF7FB006687A2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D79B5779203AF7FB006687A2 /* AppDelegate.swift */; };
 		D79B577C203AF7FB006687A2 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D79B577B203AF7FB006687A2 /* ViewController.swift */; };
 		D79B577F203AF7FB006687A2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D79B577D203AF7FB006687A2 /* Main.storyboard */; };
@@ -30,6 +34,10 @@
 		453DC9C4B7B478862508FE29 /* Pods-Diamond Club.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Diamond Club.release.xcconfig"; path = "Pods/Target Support Files/Pods-Diamond Club/Pods-Diamond Club.release.xcconfig"; sourceTree = "<group>"; };
 		7902ADCCFBCF4C53EB4D35CF /* Pods_Diamond_Club.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Diamond_Club.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		9EB26B9E585CFD98A6221E80 /* Pods-Diamond Club.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Diamond Club.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Diamond Club/Pods-Diamond Club.debug.xcconfig"; sourceTree = "<group>"; };
+		D73D7E13203B172B00AC7C75 /* AuthorizationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthorizationController.swift; sourceTree = "<group>"; };
+		D73D7E15203B1DA900AC7C75 /* Admin.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Admin.swift; sourceTree = "<group>"; };
+		D73D7E17203B1DC100AC7C75 /* Buyer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Buyer.swift; sourceTree = "<group>"; };
+		D73D7E19203B1EEF00AC7C75 /* ContrAgent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContrAgent.swift; sourceTree = "<group>"; };
 		D79B5776203AF7FB006687A2 /* Diamond Club.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Diamond Club.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		D79B5779203AF7FB006687A2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D79B577B203AF7FB006687A2 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -149,6 +157,10 @@
 			children = (
 				D79B57A4203B04A7006687A2 /* LoginViewController.swift */,
 				D79B57A7203B04D5006687A2 /* RegistrationViewController.swift */,
+				D73D7E13203B172B00AC7C75 /* AuthorizationController.swift */,
+				D73D7E15203B1DA900AC7C75 /* Admin.swift */,
+				D73D7E17203B1DC100AC7C75 /* Buyer.swift */,
+				D73D7E19203B1EEF00AC7C75 /* ContrAgent.swift */,
 			);
 			path = Auth;
 			sourceTree = "<group>";
@@ -292,9 +304,13 @@
 				D79B57A8203B04D5006687A2 /* RegistrationViewController.swift in Sources */,
 				D79B577A203AF7FB006687A2 /* AppDelegate.swift in Sources */,
 				D79B579E203B034C006687A2 /* AdminHomeViewController.swift in Sources */,
+				D73D7E16203B1DA900AC7C75 /* Admin.swift in Sources */,
 				D79B5795203B0059006687A2 /* BuyerMainViewController.swift in Sources */,
 				D79B579A203B01F0006687A2 /* AdminMenuViewController.swift in Sources */,
+				D73D7E14203B172B00AC7C75 /* AuthorizationController.swift in Sources */,
 				D79B57A2203B03B8006687A2 /* AdminRightViewController.swift in Sources */,
+				D73D7E1A203B1EEF00AC7C75 /* ContrAgent.swift in Sources */,
+				D73D7E18203B1DC100AC7C75 /* Buyer.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
