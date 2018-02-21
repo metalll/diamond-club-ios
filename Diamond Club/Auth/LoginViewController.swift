@@ -7,15 +7,32 @@
 //
 
 import UIKit
+import EZLoadingActivity
 
 class LoginViewController: UIViewController {
     
+    private let inProgressLoginString = "Authorization..."
+    
+    
+    @IBOutlet weak var loginField: UITextField!
+    @IBOutlet weak var password: UITextField!
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        AuthorizationController.sharedInstance.authorize(login: "", password: "") { (isSuccess:Bool) in
+      
+    }
+    
+    @IBAction func didTapSignIn(_ sender: Any) {
+          EZLoadingActivity.show(self.inProgressLoginString, disableUI: true)
+        AuthorizationController.sharedInstance.authorize(login: loginField.text!, password: password.text!) { (isSuccess:Bool) in
+        
+            EZLoadingActivity.hide(isSuccess, animated: true)
+            
             
         }
     }
+    
     
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()

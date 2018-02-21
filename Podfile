@@ -7,4 +7,6 @@ target 'Diamond Club' do
 
   # Pods for Diamond Club
   pod 'SlideMenuControllerSwift'
+  pod 'Alamofire', '~> 4.6'
+  pod 'EZLoadingActivity', :git => 'https://github.com/goktugyil/EZLoadingActivity.git'
 end
