@@ -7,18 +7,16 @@
 //
 
 import UIKit
+import SlideMenuControllerSwift
 
-class ContrAgentMainViewController: UIViewController {
+
+class ContrAgentMainViewController: SlideMenuController  {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
-      
+        self.mainViewController = ContrAgentMainViewController()
+        self.leftViewController = ContrAgentMenuViewController()
+        self.rightViewController = ContrAgentRightViewController()
     }
 
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-       
-    }
-    
 }

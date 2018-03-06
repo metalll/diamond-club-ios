@@ -7,6 +7,19 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0C9FD94E204EDFB90094024F /* BuyerHomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C9FD94C204EDFB90094024F /* BuyerHomeViewController.swift */; };
+		0C9FD94F204EDFB90094024F /* BuyerHomeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0C9FD94D204EDFB90094024F /* BuyerHomeViewController.xib */; };
+		0C9FD952204EDFD70094024F /* BuyerMenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C9FD950204EDFD70094024F /* BuyerMenuViewController.swift */; };
+		0C9FD953204EDFD70094024F /* BuyerMenuViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0C9FD951204EDFD70094024F /* BuyerMenuViewController.xib */; };
+		0C9FD956204EDFFB0094024F /* BuyerRightViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C9FD954204EDFFB0094024F /* BuyerRightViewController.swift */; };
+		0C9FD957204EDFFB0094024F /* BuyerRightViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0C9FD955204EDFFB0094024F /* BuyerRightViewController.xib */; };
+		0C9FD95A204EE0800094024F /* ContAgentHomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C9FD958204EE0800094024F /* ContAgentHomeViewController.swift */; };
+		0C9FD95B204EE0800094024F /* ContAgentHomeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0C9FD959204EE0800094024F /* ContAgentHomeViewController.xib */; };
+		0C9FD95E204EE0950094024F /* ContrAgentMenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C9FD95C204EE0950094024F /* ContrAgentMenuViewController.swift */; };
+		0C9FD95F204EE0950094024F /* ContrAgentMenuViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0C9FD95D204EE0950094024F /* ContrAgentMenuViewController.xib */; };
+		0C9FD962204EE0E10094024F /* ContrAgentRightViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C9FD960204EE0E10094024F /* ContrAgentRightViewController.swift */; };
+		0C9FD963204EE0E10094024F /* ContrAgentRightViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0C9FD961204EE0E10094024F /* ContrAgentRightViewController.xib */; };
+		0CB27B71204ECB58009BCBF8 /* RootNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CB27B70204ECB58009BCBF8 /* RootNavigationController.swift */; };
 		29E418A5E5E6C3D3CAA1D4AF /* Pods_Diamond_Club.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7902ADCCFBCF4C53EB4D35CF /* Pods_Diamond_Club.framework */; };
 		D73D7E14203B172B00AC7C75 /* AuthorizationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D73D7E13203B172B00AC7C75 /* AuthorizationController.swift */; };
 		D73D7E16203B1DA900AC7C75 /* Admin.swift in Sources */ = {isa = PBXBuildFile; fileRef = D73D7E15203B1DA900AC7C75 /* Admin.swift */; };
@@ -32,6 +45,19 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0C9FD94C204EDFB90094024F /* BuyerHomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BuyerHomeViewController.swift; sourceTree = "<group>"; };
+		0C9FD94D204EDFB90094024F /* BuyerHomeViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = BuyerHomeViewController.xib; sourceTree = "<group>"; };
+		0C9FD950204EDFD70094024F /* BuyerMenuViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BuyerMenuViewController.swift; sourceTree = "<group>"; };
+		0C9FD951204EDFD70094024F /* BuyerMenuViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = BuyerMenuViewController.xib; sourceTree = "<group>"; };
+		0C9FD954204EDFFB0094024F /* BuyerRightViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BuyerRightViewController.swift; sourceTree = "<group>"; };
+		0C9FD955204EDFFB0094024F /* BuyerRightViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = BuyerRightViewController.xib; sourceTree = "<group>"; };
+		0C9FD958204EE0800094024F /* ContAgentHomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContAgentHomeViewController.swift; sourceTree = "<group>"; };
+		0C9FD959204EE0800094024F /* ContAgentHomeViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ContAgentHomeViewController.xib; sourceTree = "<group>"; };
+		0C9FD95C204EE0950094024F /* ContrAgentMenuViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContrAgentMenuViewController.swift; sourceTree = "<group>"; };
+		0C9FD95D204EE0950094024F /* ContrAgentMenuViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ContrAgentMenuViewController.xib; sourceTree = "<group>"; };
+		0C9FD960204EE0E10094024F /* ContrAgentRightViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContrAgentRightViewController.swift; sourceTree = "<group>"; };
+		0C9FD961204EE0E10094024F /* ContrAgentRightViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ContrAgentRightViewController.xib; sourceTree = "<group>"; };
+		0CB27B70204ECB58009BCBF8 /* RootNavigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootNavigationController.swift; sourceTree = "<group>"; };
 		453DC9C4B7B478862508FE29 /* Pods-Diamond Club.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Diamond Club.release.xcconfig"; path = "Pods/Target Support Files/Pods-Diamond Club/Pods-Diamond Club.release.xcconfig"; sourceTree = "<group>"; };
 		7902ADCCFBCF4C53EB4D35CF /* Pods_Diamond_Club.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Diamond_Club.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		9EB26B9E585CFD98A6221E80 /* Pods-Diamond Club.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Diamond Club.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Diamond Club/Pods-Diamond Club.debug.xcconfig"; sourceTree = "<group>"; };
@@ -136,6 +162,12 @@
 			isa = PBXGroup;
 			children = (
 				D79B5796203B0068006687A2 /* ContrAgentMainViewController.swift */,
+				0C9FD958204EE0800094024F /* ContAgentHomeViewController.swift */,
+				0C9FD959204EE0800094024F /* ContAgentHomeViewController.xib */,
+				0C9FD95C204EE0950094024F /* ContrAgentMenuViewController.swift */,
+				0C9FD95D204EE0950094024F /* ContrAgentMenuViewController.xib */,
+				0C9FD960204EE0E10094024F /* ContrAgentRightViewController.swift */,
+				0C9FD961204EE0E10094024F /* ContrAgentRightViewController.xib */,
 			);
 			path = ContrAgent;
 			sourceTree = "<group>";
@@ -144,6 +176,12 @@
 			isa = PBXGroup;
 			children = (
 				D79B5794203B0059006687A2 /* BuyerMainViewController.swift */,
+				0C9FD94C204EDFB90094024F /* BuyerHomeViewController.swift */,
+				0C9FD94D204EDFB90094024F /* BuyerHomeViewController.xib */,
+				0C9FD950204EDFD70094024F /* BuyerMenuViewController.swift */,
+				0C9FD951204EDFD70094024F /* BuyerMenuViewController.xib */,
+				0C9FD954204EDFFB0094024F /* BuyerRightViewController.swift */,
+				0C9FD955204EDFFB0094024F /* BuyerRightViewController.xib */,
 			);
 			path = Buyer;
 			sourceTree = "<group>";
@@ -172,6 +210,7 @@
 				D73D7E15203B1DA900AC7C75 /* Admin.swift */,
 				D73D7E17203B1DC100AC7C75 /* Buyer.swift */,
 				D73D7E19203B1EEF00AC7C75 /* ContrAgent.swift */,
+				0CB27B70204ECB58009BCBF8 /* RootNavigationController.swift */,
 			);
 			path = Auth;
 			sourceTree = "<group>";
@@ -238,12 +277,18 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0C9FD957204EDFFB0094024F /* BuyerRightViewController.xib in Resources */,
 				D79B5784203AF7FB006687A2 /* LaunchScreen.storyboard in Resources */,
 				D79B579B203B01F0006687A2 /* AdminMenuViewController.xib in Resources */,
+				0C9FD94F204EDFB90094024F /* BuyerHomeViewController.xib in Resources */,
 				D79B5781203AF7FB006687A2 /* Assets.xcassets in Resources */,
 				D79B577F203AF7FB006687A2 /* Main.storyboard in Resources */,
 				D79B579F203B034C006687A2 /* AdminHomeViewController.xib in Resources */,
 				D79B57A3203B03B8006687A2 /* AdminRightViewController.xib in Resources */,
+				0C9FD963204EE0E10094024F /* ContrAgentRightViewController.xib in Resources */,
+				0C9FD953204EDFD70094024F /* BuyerMenuViewController.xib in Resources */,
+				0C9FD95F204EE0950094024F /* ContrAgentMenuViewController.xib in Resources */,
+				0C9FD95B204EE0800094024F /* ContAgentHomeViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -313,15 +358,22 @@
 			buildActionMask = 2147483647;
 			files = (
 				D79B57A5203B04A7006687A2 /* LoginViewController.swift in Sources */,
+				0CB27B71204ECB58009BCBF8 /* RootNavigationController.swift in Sources */,
+				0C9FD962204EE0E10094024F /* ContrAgentRightViewController.swift in Sources */,
 				D77BAAC4203DA57300FD504D /* RoundedButton.swift in Sources */,
+				0C9FD95E204EE0950094024F /* ContrAgentMenuViewController.swift in Sources */,
+				0C9FD956204EDFFB0094024F /* BuyerRightViewController.swift in Sources */,
 				D79B5797203B0068006687A2 /* ContrAgentMainViewController.swift in Sources */,
 				D79B577C203AF7FB006687A2 /* ViewController.swift in Sources */,
 				D79B5793203B0041006687A2 /* AdminMainViewController.swift in Sources */,
 				D79B57A8203B04D5006687A2 /* RegistrationViewController.swift in Sources */,
+				0C9FD952204EDFD70094024F /* BuyerMenuViewController.swift in Sources */,
 				D79B577A203AF7FB006687A2 /* AppDelegate.swift in Sources */,
 				D79B579E203B034C006687A2 /* AdminHomeViewController.swift in Sources */,
 				D73D7E16203B1DA900AC7C75 /* Admin.swift in Sources */,
 				D79B5795203B0059006687A2 /* BuyerMainViewController.swift in Sources */,
+				0C9FD95A204EE0800094024F /* ContAgentHomeViewController.swift in Sources */,
+				0C9FD94E204EDFB90094024F /* BuyerHomeViewController.swift in Sources */,
 				D79B579A203B01F0006687A2 /* AdminMenuViewController.swift in Sources */,
 				D73D7E14203B172B00AC7C75 /* AuthorizationController.swift in Sources */,
 				D79B57A2203B03B8006687A2 /* AdminRightViewController.swift in Sources */,

@@ -242,10 +242,10 @@
             </objects>
             <point key="canvasLocation" x="924" y="-152.47376311844079"/>
         </scene>
-        <!--Navigation Controller-->
+        <!--Root Navigation Controller-->
         <scene sceneID="Vkz-Wc-54s">
             <objects>
-                <navigationController id="pEK-6y-qeN" sceneMemberID="viewController">
+                <navigationController id="pEK-6y-qeN" customClass="RootNavigationController" customModule="Diamond_Club" customModuleProvider="target" sceneMemberID="viewController">
                     <nil key="simulatedTopBarMetrics"/>
                     <nil key="simulatedBottomBarMetrics"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" barStyle="black" id="4di-A0-Q6x">

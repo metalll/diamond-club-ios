@@ -59,6 +59,7 @@ class AuthorizationController: NSObject {
             
             if (responce.response?.statusCode == self.kSuccessCode) {
                 self.applyCurrentUser(completion:completion)
+                print("apply user")
             } else {
                 
                 completion(false);
@@ -105,9 +106,14 @@ class AuthorizationController: NSObject {
                 if let json = responce.result.value as? [String: Any] {
                     print("json \(json)")
                     
-                    if let role = json["role"] as? String {
-                        if (role == "ROLE_BUYER") {
-                            self.loadBuyer(baseInfo:(json["user"] as? Dictionary<String,Any?>)!,fullInfo:(json["fullInfo"] as? Dictionary<String,Any?>)!)
+                    if let data = json["data"] as? [String: Any] {
+                        
+                        if let role = data["role"] as? String {
+                            
+                            if (role == "ROLE_BUYER") {
+                                self.loadBuyer(json:data)
+                                print("load buyer")
+                            }
                         }
                     }
                 }
@@ -119,8 +125,11 @@ class AuthorizationController: NSObject {
         }
     }
     
-    private func loadBuyer(baseInfo:Dictionary<String,Any?>,fullInfo:Dictionary<String,Any?>) {
-       
+    private func loadBuyer(json : [String : Any]) {
+        
+        if let fullInfo = json["fullInfo"] as? [String : Any] {
+        
+        
         
         self.buyer = Buyer();
         
@@ -129,14 +138,16 @@ class AuthorizationController: NSObject {
         self.buyer?.foreignId = (fullInfo["foreignId"] as? Int32)!
         self.buyer?.foreignTargetBuyerId = (fullInfo["foreignId"] as? Int32)!
         self.buyer?.id = (fullInfo["id"] as? Int32)!
-        self.buyer?.isActive = (fullInfo["isActive"] as? Bool)!
-        self.buyer?.percent = (fullInfo["percent"] as? String)!
+        self.buyer?.isActive = (fullInfo["isActive"] as? String)! == "YES"
+        self.buyer?.percent = (fullInfo["percent"] as? Float)!
         
         
         DispatchQueue.main.asyncAfter(deadline: .now() + 0.7) {
-             NotificationCenter.default.post(name: NSNotification.Name(rawValue: NSNotificationCenterDidSingUpNotification), object: nil,userInfo:["role":"ROLE_BUYER"])
+            print("send push")
+            NotificationCenter.default.post(name: NSNotification.Name(rawValue: NSNotificationCenterDidSingUpNotification), object: nil,userInfo:["role":"ROLE_BUYER"])
         }
         
+        }
         
     }
     

@@ -19,7 +19,7 @@ class Buyer: NSObject {
         self.foreignTargetBuyerId = 0;
         self.id = 0
         self.isActive = false
-        self.percent = ""
+        self.percent = 0
         self.shadowBalance = 0
         self.billingCardNum = ""
         self.cashbackCardNumber = ""
@@ -33,7 +33,7 @@ class Buyer: NSObject {
     public var foreignTargetBuyerId:Int32
     public var id:Int32
     public var isActive:Bool
-    public var percent:String
+    public var percent:Float
     public var shadowBalance:Float
     public var billingCardNum:String
     public var cashbackCardNumber:String
