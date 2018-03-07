@@ -14,14 +14,14 @@ class BuyerMainViewController: SlideMenuController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        self.mainViewController = BuyerHomeViewController()
-        self.leftViewController = BuyerMenuViewController()
-        self.rightViewController = BuyerRightViewController()
+        
         
         // Do any additional setup after loading the view.
     }
     
     
-    
+    override var preferredStatusBarStyle: UIStatusBarStyle {
+        return .lightContent
+    }
     
 }

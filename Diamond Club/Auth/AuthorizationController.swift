@@ -14,7 +14,7 @@ let NSNotificationCenterDidSingUpNotification = "NSNotificationCenterDidSingUpNo
 
 class AuthorizationController: NSObject {
     
-    public static let instance = AuthorizationController()
+    public static var instance = AuthorizationController()
     
     private let authEndpoint:String = "https://diamond-card.herokuapp.com/"
     
@@ -43,8 +43,7 @@ class AuthorizationController: NSObject {
     
     var authorizedUser = NSNull()
     
-    public static let sharedInstance = AuthorizationController()
-    
+  
     public func authorize(login:String, password:String, completion:@escaping (Bool)->Void) {
         
         if (login.count == 0 || password.count == 0) {
@@ -128,7 +127,7 @@ class AuthorizationController: NSObject {
     private func loadBuyer(json : [String : Any]) {
         
         if let fullInfo = json["fullInfo"] as? [String : Any] {
-        
+    
         
         
         self.buyer = Buyer();
@@ -140,25 +139,29 @@ class AuthorizationController: NSObject {
         self.buyer?.id = (fullInfo["id"] as? Int32)!
         self.buyer?.isActive = (fullInfo["isActive"] as? String)! == "YES"
         self.buyer?.percent = (fullInfo["percent"] as? Float)!
+            
+            
+            if let user = json["user"] as? [String : Any] {
+                self.buyer?.billingCardNum = (user["cashbackCardNumber"] as? String)!
+            }
         
-        
-        DispatchQueue.main.asyncAfter(deadline: .now() + 0.7) {
+       
             print("send push")
             NotificationCenter.default.post(name: NSNotification.Name(rawValue: NSNotificationCenterDidSingUpNotification), object: nil,userInfo:["role":"ROLE_BUYER"])
-        }
+        
         
         }
         
     }
     
     private func loadContAgent(baseInfo:Dictionary<String,Any?>,fullInfo:Dictionary<String,Any?>) {
-        DispatchQueue.main.asyncAfter(deadline: .now() + 0.7) {
+       
             NotificationCenter.default.post(name: NSNotification.Name(rawValue: NSNotificationCenterDidSingUpNotification), object: nil,userInfo:["role":"ROLE_CONTR_AGENT"])
-        }
+        
     }
     
     private func loadAdmin(baseInfo:Dictionary<String,Any?>,fullInfo:Dictionary<String,Any?>) {
-        DispatchQueue.main.asyncAfter(deadline: .now() + 0.7) {
+        DispatchQueue.main.asyncAfter(deadline: .now()) {
             NotificationCenter.default.post(name: NSNotification.Name(rawValue: NSNotificationCenterDidSingUpNotification), object: nil,userInfo:["role":"ROLE_ADMIN"])
         }
     }

@@ -25,7 +25,7 @@ class LoginViewController: UIViewController {
     
     @IBAction func didTapSignIn(_ sender: Any) {
           EZLoadingActivity.show(self.inProgressLoginString, disableUI: true)
-        AuthorizationController.sharedInstance.authorize(login: loginField.text!, password: password.text!) { (isSuccess:Bool) in
+        AuthorizationController.instance.authorize(login: loginField.text!, password: password.text!) { (isSuccess:Bool) in
         
             EZLoadingActivity.hide(isSuccess, animated: true)
             

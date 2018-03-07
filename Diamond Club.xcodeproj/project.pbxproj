@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0C73F55320500FC10031C787 /* ActionCircleButtons.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C73F55220500FC10031C787 /* ActionCircleButtons.swift */; };
+		0C73F557205029520031C787 /* qr.gif in Resources */ = {isa = PBXBuildFile; fileRef = 0C73F556205029520031C787 /* qr.gif */; };
+		0C73F55920503FE10031C787 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0C73F55820503FE10031C787 /* MapKit.framework */; };
 		0C9FD94E204EDFB90094024F /* BuyerHomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C9FD94C204EDFB90094024F /* BuyerHomeViewController.swift */; };
 		0C9FD94F204EDFB90094024F /* BuyerHomeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0C9FD94D204EDFB90094024F /* BuyerHomeViewController.xib */; };
 		0C9FD952204EDFD70094024F /* BuyerMenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C9FD950204EDFD70094024F /* BuyerMenuViewController.swift */; };
@@ -45,6 +48,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0C73F55220500FC10031C787 /* ActionCircleButtons.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActionCircleButtons.swift; sourceTree = "<group>"; };
+		0C73F556205029520031C787 /* qr.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = qr.gif; sourceTree = "<group>"; };
+		0C73F55820503FE10031C787 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
 		0C9FD94C204EDFB90094024F /* BuyerHomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BuyerHomeViewController.swift; sourceTree = "<group>"; };
 		0C9FD94D204EDFB90094024F /* BuyerHomeViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = BuyerHomeViewController.xib; sourceTree = "<group>"; };
 		0C9FD950204EDFD70094024F /* BuyerMenuViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BuyerMenuViewController.swift; sourceTree = "<group>"; };
@@ -91,6 +97,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0C73F55920503FE10031C787 /* MapKit.framework in Frameworks */,
 				29E418A5E5E6C3D3CAA1D4AF /* Pods_Diamond_Club.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -98,6 +105,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0C73F55120500FA00031C787 /* CustomUI */ = {
+			isa = PBXGroup;
+			children = (
+				0C73F556205029520031C787 /* qr.gif */,
+				0C73F55220500FC10031C787 /* ActionCircleButtons.swift */,
+			);
+			path = CustomUI;
+			sourceTree = "<group>";
+		};
 		3766D93DF8214C5E92ADA061 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
@@ -110,6 +126,7 @@
 		CE8F73B92E25A1E08D9B4AF8 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				0C73F55820503FE10031C787 /* MapKit.framework */,
 				7902ADCCFBCF4C53EB4D35CF /* Pods_Diamond_Club.framework */,
 			);
 			name = Frameworks;
@@ -144,6 +161,7 @@
 		D79B5778203AF7FB006687A2 /* Diamond Club */ = {
 			isa = PBXGroup;
 			children = (
+				0C73F55120500FA00031C787 /* CustomUI */,
 				D79B57A6203B04AE006687A2 /* Auth */,
 				D79B5791203AFA75006687A2 /* Admin */,
 				D79B5790203AFA5C006687A2 /* Buyer */,
@@ -251,6 +269,11 @@
 					D79B5775203AF7FB006687A2 = {
 						CreatedOnToolsVersion = 9.2;
 						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.Maps.iOS = {
+								enabled = 1;
+							};
+						};
 					};
 				};
 			};
@@ -277,6 +300,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0C73F557205029520031C787 /* qr.gif in Resources */,
 				0C9FD957204EDFFB0094024F /* BuyerRightViewController.xib in Resources */,
 				D79B5784203AF7FB006687A2 /* LaunchScreen.storyboard in Resources */,
 				D79B579B203B01F0006687A2 /* AdminMenuViewController.xib in Resources */,
@@ -336,12 +360,14 @@
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-Diamond Club/Pods-Diamond Club-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/EFQRCode/EFQRCode.framework",
 				"${BUILT_PRODUCTS_DIR}/EZLoadingActivity/EZLoadingActivity.framework",
 				"${BUILT_PRODUCTS_DIR}/SlideMenuControllerSwift/SlideMenuControllerSwift.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/EFQRCode.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/EZLoadingActivity.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SlideMenuControllerSwift.framework",
 			);
@@ -357,6 +383,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0C73F55320500FC10031C787 /* ActionCircleButtons.swift in Sources */,
 				D79B57A5203B04A7006687A2 /* LoginViewController.swift in Sources */,
 				0CB27B71204ECB58009BCBF8 /* RootNavigationController.swift in Sources */,
 				0C9FD962204EE0E10094024F /* ContrAgentRightViewController.swift in Sources */,

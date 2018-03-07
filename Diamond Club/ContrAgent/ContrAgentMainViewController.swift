@@ -14,9 +14,10 @@ class ContrAgentMainViewController: SlideMenuController  {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        self.mainViewController = ContrAgentMainViewController()
+        self.mainViewController = ContAgentHomeViewController()
         self.leftViewController = ContrAgentMenuViewController()
         self.rightViewController = ContrAgentRightViewController()
+          super.awakeFromNib()
     }
 
 }
