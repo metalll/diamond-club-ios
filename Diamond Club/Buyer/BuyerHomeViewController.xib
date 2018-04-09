@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
     <device id="retina5_9" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
         <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
         <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
@@ -14,7 +14,7 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="BuyerHomeViewController" customModule="Diamond_Club" customModuleProvider="target">
             <connections>
-                <outlet property="mapView" destination="7nU-sI-wjy" id="nde-As-dSO"/>
+                <outlet property="mapView" destination="7nU-sI-wjy" id="2Y9-BV-6Fu"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>
@@ -81,16 +81,25 @@
                     <rect key="frame" x="102.66666666666666" y="138" width="82.666666666666657" height="82.666666666666686"/>
                     <inset key="imageEdgeInsets" minX="20" minY="20" maxX="20" maxY="20"/>
                     <state key="normal" image="qr_code_colored"/>
+                    <connections>
+                        <action selector="didTapQRCode:" destination="-1" eventType="touchUpInside" id="8gq-BY-L9k"/>
+                    </connections>
                 </button>
                 <button opaque="NO" contentMode="center" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5Xa-nZ-dhy" customClass="ActionCircleButtons" customModule="Diamond_Club" customModuleProvider="target">
                     <rect key="frame" x="195.33333333333334" y="138" width="82.666666666666657" height="82.666666666666686"/>
                     <inset key="imageEdgeInsets" minX="20" minY="20" maxX="20" maxY="20"/>
                     <state key="normal" image="ic_full_shoping_cart"/>
+                    <connections>
+                        <action selector="didTapDiamondOnline:" destination="-1" eventType="touchUpInside" id="aZh-gn-66t"/>
+                    </connections>
                 </button>
                 <button opaque="NO" contentMode="center" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="U8t-bw-x3i" customClass="ActionCircleButtons" customModule="Diamond_Club" customModuleProvider="target">
                     <rect key="frame" x="288" y="138" width="82.666666666666686" height="82.666666666666686"/>
                     <inset key="imageEdgeInsets" minX="20" minY="20" maxX="20" maxY="20"/>
                     <state key="normal" image="ic_shopping_bag"/>
+                    <connections>
+                        <action selector="didTapPartners:" destination="-1" eventType="touchUpInside" id="QZL-EY-VeU"/>
+                    </connections>
                 </button>
                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Partners" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DW8-0R-BQ2">
                     <rect key="frame" x="302" y="222" width="54.666666666666686" height="17"/>
@@ -123,6 +132,9 @@
                     <rect key="frame" x="10" y="138" width="82.666666666666671" height="82.666666666666686"/>
                     <inset key="imageEdgeInsets" minX="20" minY="20" maxX="20" maxY="20"/>
                     <state key="normal" image="ic_gift"/>
+                    <connections>
+                        <action selector="didTapShares:" destination="-1" eventType="touchUpInside" id="oWh-aw-cix"/>
+                    </connections>
                 </button>
             </subviews>
             <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>

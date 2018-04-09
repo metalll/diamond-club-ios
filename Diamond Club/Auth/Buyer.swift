@@ -25,8 +25,15 @@ class Buyer: NSObject {
         self.cashbackCardNumber = ""
         self.email = ""
         self.userID = -1
+        self.name = ""
+        self.secondName = ""
+        self.avatarImage = ""
     }
     
+    
+    public var avatarImage:String
+    public var name:String
+    public var secondName:String
     public var balance:Float
     public var foreignAdminId:Int32
     public var foreignId:Int32
@@ -39,5 +46,6 @@ class Buyer: NSObject {
     public var cashbackCardNumber:String
     public var email:String
     public var userID:Int32
-
+    
+    
 }

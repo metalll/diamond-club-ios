@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
     <device id="retina5_9" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
         <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
         <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
@@ -24,15 +24,25 @@
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
                 <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="gRB-ma-F8g">
-                    <rect key="frame" x="65.666666666666671" y="229.33333333333331" width="243.66666666666663" height="243.33333333333331"/>
+                    <rect key="frame" x="65.666666666666671" y="199.33333333333331" width="243.66666666666663" height="243.33333333333331"/>
                 </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="This your bar code. Please show this code administrator shop for append your points " textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="10" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xNb-nH-xwk">
+                    <rect key="frame" x="30" y="462.66666666666669" width="314.66666666666669" height="64.666666666666686"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
             </subviews>
             <color key="backgroundColor" red="1" green="0.99215686274509807" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
             <constraints>
                 <constraint firstItem="gRB-ma-F8g" firstAttribute="centerX" secondItem="fnl-2z-Ty3" secondAttribute="centerX" id="0as-M0-Jrw"/>
-                <constraint firstItem="gRB-ma-F8g" firstAttribute="centerY" secondItem="fnl-2z-Ty3" secondAttribute="centerY" constant="-60" id="8av-HB-DfH"/>
+                <constraint firstItem="xNb-nH-xwk" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="30" id="0ri-vC-PT1"/>
+                <constraint firstItem="gRB-ma-F8g" firstAttribute="centerY" secondItem="fnl-2z-Ty3" secondAttribute="centerY" constant="-90" id="8av-HB-DfH"/>
+                <constraint firstItem="xNb-nH-xwk" firstAttribute="centerX" secondItem="gRB-ma-F8g" secondAttribute="centerX" id="AfW-UP-kdR"/>
+                <constraint firstAttribute="trailing" secondItem="xNb-nH-xwk" secondAttribute="trailing" constant="30" id="UdW-8p-k9f"/>
                 <constraint firstItem="gRB-ma-F8g" firstAttribute="height" secondItem="i5M-Pr-FkT" secondAttribute="height" multiplier="0.3" id="guZ-qk-TMJ"/>
                 <constraint firstItem="gRB-ma-F8g" firstAttribute="width" secondItem="i5M-Pr-FkT" secondAttribute="height" multiplier="0.3" id="kgj-pw-9xq"/>
+                <constraint firstItem="xNb-nH-xwk" firstAttribute="top" secondItem="gRB-ma-F8g" secondAttribute="bottom" constant="20" id="sI1-14-cIk"/>
             </constraints>
             <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
         </view>

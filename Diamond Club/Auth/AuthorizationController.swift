@@ -16,7 +16,7 @@ class AuthorizationController: NSObject {
     
     public static var instance = AuthorizationController()
     
-    private let authEndpoint:String = "https://diamond-card.herokuapp.com/"
+    public let authEndpoint:String = "https://diamond-card.herokuapp.com/"
     
     private let loginPath:String = "login"
     private let registrationPath = "Reg"
@@ -84,7 +84,6 @@ class AuthorizationController: NSObject {
                             
                             self.authorize(login: login, password: password, completion: completion)
                         } else {
-                            
                             completion(false)
                         }
                     }
@@ -97,7 +96,8 @@ class AuthorizationController: NSObject {
     }
     
     public func applyCurrentUser(completion:@escaping (Bool)->Void) {
-        
+        let delegate = UIApplication.shared.delegate as! AppDelegate
+        delegate.registerForPushNotifications();
         Alamofire.request(authEndpoint + applyCurrentUserPath, method:.post).responseJSON { (responce) in
             
             if (responce.response?.statusCode == self.kSuccessCode) {
@@ -105,7 +105,7 @@ class AuthorizationController: NSObject {
                 if let json = responce.result.value as? [String: Any] {
                     print("json \(json)")
                     
-                    if let data = json["data"] as? [String: Any] {
+                    if let data = json["responceData"] as? [String: Any] {
                         
                         if let role = data["role"] as? String {
                             
@@ -139,10 +139,13 @@ class AuthorizationController: NSObject {
         self.buyer?.id = (fullInfo["id"] as? Int32)!
         self.buyer?.isActive = (fullInfo["isActive"] as? String)! == "YES"
         self.buyer?.percent = (fullInfo["percent"] as? Float)!
-            
+        
             
             if let user = json["user"] as? [String : Any] {
                 self.buyer?.billingCardNum = (user["cashbackCardNumber"] as? String)!
+                self.buyer?.name = user.keys.contains("firstName") ? (user["firstName"] as? String)! : ""
+                self.buyer?.secondName = user.keys.contains("secondName") ? (user["secondName"] as? String)! : ""
+                self.buyer?.avatarImage = user.keys.contains("avatar") ? (user["avatar"] as? String)! : ""
             }
         
        

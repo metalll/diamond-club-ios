@@ -10,4 +10,5 @@ target 'Diamond Club' do
   pod 'Alamofire', '~> 4.6'
   pod 'EZLoadingActivity', :git => 'https://github.com/goktugyil/EZLoadingActivity.git'
   pod 'EFQRCode', '~> 4.2.1'
+  pod 'MFCard'
 end

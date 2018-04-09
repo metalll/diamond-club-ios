@@ -13,7 +13,7 @@ class RootNavigationController: UINavigationController {
     override func viewDidLoad() {
         super.viewDidLoad()
         self.subribe()
-        
+    
     }
     
     deinit {
@@ -37,7 +37,7 @@ class RootNavigationController: UINavigationController {
             viewController = BuyerMainViewController(mainViewController: BuyerHomeViewController(),leftMenuViewController: BuyerMenuViewController(),rightMenuViewController: BuyerRightViewController())
             break
         case "ROLE_CONTR_AGENT":
-            viewController = ContrAgentMainViewController()
+            viewController = ContrAgentMainViewController(mainViewController: ContrAgentMainViewController(), leftMenuViewController: BuyerMenuViewController());
             break
         case "ROLE_ADMIN":
             viewController = AdminMainViewController()

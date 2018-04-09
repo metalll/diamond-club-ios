@@ -10,6 +10,24 @@
 		0C73F55320500FC10031C787 /* ActionCircleButtons.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C73F55220500FC10031C787 /* ActionCircleButtons.swift */; };
 		0C73F557205029520031C787 /* qr.gif in Resources */ = {isa = PBXBuildFile; fileRef = 0C73F556205029520031C787 /* qr.gif */; };
 		0C73F55920503FE10031C787 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0C73F55820503FE10031C787 /* MapKit.framework */; };
+		0C833D5C207B87A0004D093A /* BuyerMessagesArhive.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C833D5A207B87A0004D093A /* BuyerMessagesArhive.swift */; };
+		0C833D5D207B87A0004D093A /* BuyerMessagesArhive.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0C833D5B207B87A0004D093A /* BuyerMessagesArhive.xib */; };
+		0C833D60207B8A6A004D093A /* AboutDiamondClub.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C833D5E207B8A6A004D093A /* AboutDiamondClub.swift */; };
+		0C833D61207B8A6A004D093A /* AboutDiamondClub.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0C833D5F207B8A6A004D093A /* AboutDiamondClub.xib */; };
+		0C833D64207B8AD2004D093A /* BuyerSettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C833D62207B8AD2004D093A /* BuyerSettingsViewController.swift */; };
+		0C833D65207B8AD2004D093A /* BuyerSettingsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0C833D63207B8AD2004D093A /* BuyerSettingsViewController.xib */; };
+		0C833D68207B8BD5004D093A /* EditBuyerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C833D66207B8BD5004D093A /* EditBuyerViewController.swift */; };
+		0C833D69207B8BD5004D093A /* EditBuyerViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0C833D67207B8BD5004D093A /* EditBuyerViewController.xib */; };
+		0C833D6C207B8C13004D093A /* BuyerInfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C833D6A207B8C13004D093A /* BuyerInfoViewController.swift */; };
+		0C833D6D207B8C13004D093A /* BuyerInfoViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0C833D6B207B8C13004D093A /* BuyerInfoViewController.xib */; };
+		0C833D70207B8D46004D093A /* PartnersViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C833D6E207B8D46004D093A /* PartnersViewController.swift */; };
+		0C833D71207B8D46004D093A /* PartnersViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0C833D6F207B8D46004D093A /* PartnersViewController.xib */; };
+		0C833D74207B8D64004D093A /* DiamondOnlineViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C833D72207B8D64004D093A /* DiamondOnlineViewController.swift */; };
+		0C833D75207B8D64004D093A /* DiamondOnlineViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0C833D73207B8D64004D093A /* DiamondOnlineViewController.xib */; };
+		0C833D78207B8D78004D093A /* QRCodeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C833D76207B8D78004D093A /* QRCodeViewController.swift */; };
+		0C833D79207B8D78004D093A /* QRCodeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0C833D77207B8D78004D093A /* QRCodeViewController.xib */; };
+		0C833D7C207B906C004D093A /* SharesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C833D7A207B906C004D093A /* SharesViewController.swift */; };
+		0C833D7D207B906C004D093A /* SharesViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0C833D7B207B906C004D093A /* SharesViewController.xib */; };
 		0C9FD94E204EDFB90094024F /* BuyerHomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C9FD94C204EDFB90094024F /* BuyerHomeViewController.swift */; };
 		0C9FD94F204EDFB90094024F /* BuyerHomeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0C9FD94D204EDFB90094024F /* BuyerHomeViewController.xib */; };
 		0C9FD952204EDFD70094024F /* BuyerMenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C9FD950204EDFD70094024F /* BuyerMenuViewController.swift */; };
@@ -51,6 +69,25 @@
 		0C73F55220500FC10031C787 /* ActionCircleButtons.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActionCircleButtons.swift; sourceTree = "<group>"; };
 		0C73F556205029520031C787 /* qr.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = qr.gif; sourceTree = "<group>"; };
 		0C73F55820503FE10031C787 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+		0C833D59207B5B1C004D093A /* Diamond Club.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "Diamond Club.entitlements"; sourceTree = "<group>"; };
+		0C833D5A207B87A0004D093A /* BuyerMessagesArhive.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BuyerMessagesArhive.swift; sourceTree = "<group>"; };
+		0C833D5B207B87A0004D093A /* BuyerMessagesArhive.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = BuyerMessagesArhive.xib; sourceTree = "<group>"; };
+		0C833D5E207B8A6A004D093A /* AboutDiamondClub.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutDiamondClub.swift; sourceTree = "<group>"; };
+		0C833D5F207B8A6A004D093A /* AboutDiamondClub.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AboutDiamondClub.xib; sourceTree = "<group>"; };
+		0C833D62207B8AD2004D093A /* BuyerSettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BuyerSettingsViewController.swift; sourceTree = "<group>"; };
+		0C833D63207B8AD2004D093A /* BuyerSettingsViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = BuyerSettingsViewController.xib; sourceTree = "<group>"; };
+		0C833D66207B8BD5004D093A /* EditBuyerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditBuyerViewController.swift; sourceTree = "<group>"; };
+		0C833D67207B8BD5004D093A /* EditBuyerViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = EditBuyerViewController.xib; sourceTree = "<group>"; };
+		0C833D6A207B8C13004D093A /* BuyerInfoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BuyerInfoViewController.swift; sourceTree = "<group>"; };
+		0C833D6B207B8C13004D093A /* BuyerInfoViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = BuyerInfoViewController.xib; sourceTree = "<group>"; };
+		0C833D6E207B8D46004D093A /* PartnersViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PartnersViewController.swift; sourceTree = "<group>"; };
+		0C833D6F207B8D46004D093A /* PartnersViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PartnersViewController.xib; sourceTree = "<group>"; };
+		0C833D72207B8D64004D093A /* DiamondOnlineViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiamondOnlineViewController.swift; sourceTree = "<group>"; };
+		0C833D73207B8D64004D093A /* DiamondOnlineViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DiamondOnlineViewController.xib; sourceTree = "<group>"; };
+		0C833D76207B8D78004D093A /* QRCodeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QRCodeViewController.swift; sourceTree = "<group>"; };
+		0C833D77207B8D78004D093A /* QRCodeViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = QRCodeViewController.xib; sourceTree = "<group>"; };
+		0C833D7A207B906C004D093A /* SharesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SharesViewController.swift; sourceTree = "<group>"; };
+		0C833D7B207B906C004D093A /* SharesViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SharesViewController.xib; sourceTree = "<group>"; };
 		0C9FD94C204EDFB90094024F /* BuyerHomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BuyerHomeViewController.swift; sourceTree = "<group>"; };
 		0C9FD94D204EDFB90094024F /* BuyerHomeViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = BuyerHomeViewController.xib; sourceTree = "<group>"; };
 		0C9FD950204EDFD70094024F /* BuyerMenuViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BuyerMenuViewController.swift; sourceTree = "<group>"; };
@@ -161,6 +198,7 @@
 		D79B5778203AF7FB006687A2 /* Diamond Club */ = {
 			isa = PBXGroup;
 			children = (
+				0C833D59207B5B1C004D093A /* Diamond Club.entitlements */,
 				0C73F55120500FA00031C787 /* CustomUI */,
 				D79B57A6203B04AE006687A2 /* Auth */,
 				D79B5791203AFA75006687A2 /* Admin */,
@@ -200,6 +238,24 @@
 				0C9FD951204EDFD70094024F /* BuyerMenuViewController.xib */,
 				0C9FD954204EDFFB0094024F /* BuyerRightViewController.swift */,
 				0C9FD955204EDFFB0094024F /* BuyerRightViewController.xib */,
+				0C833D5A207B87A0004D093A /* BuyerMessagesArhive.swift */,
+				0C833D5B207B87A0004D093A /* BuyerMessagesArhive.xib */,
+				0C833D5E207B8A6A004D093A /* AboutDiamondClub.swift */,
+				0C833D5F207B8A6A004D093A /* AboutDiamondClub.xib */,
+				0C833D62207B8AD2004D093A /* BuyerSettingsViewController.swift */,
+				0C833D63207B8AD2004D093A /* BuyerSettingsViewController.xib */,
+				0C833D66207B8BD5004D093A /* EditBuyerViewController.swift */,
+				0C833D67207B8BD5004D093A /* EditBuyerViewController.xib */,
+				0C833D6A207B8C13004D093A /* BuyerInfoViewController.swift */,
+				0C833D6B207B8C13004D093A /* BuyerInfoViewController.xib */,
+				0C833D6E207B8D46004D093A /* PartnersViewController.swift */,
+				0C833D6F207B8D46004D093A /* PartnersViewController.xib */,
+				0C833D72207B8D64004D093A /* DiamondOnlineViewController.swift */,
+				0C833D73207B8D64004D093A /* DiamondOnlineViewController.xib */,
+				0C833D76207B8D78004D093A /* QRCodeViewController.swift */,
+				0C833D77207B8D78004D093A /* QRCodeViewController.xib */,
+				0C833D7A207B906C004D093A /* SharesViewController.swift */,
+				0C833D7B207B906C004D093A /* SharesViewController.xib */,
 			);
 			path = Buyer;
 			sourceTree = "<group>";
@@ -273,6 +329,9 @@
 							com.apple.Maps.iOS = {
 								enabled = 1;
 							};
+							com.apple.Push = {
+								enabled = 1;
+							};
 						};
 					};
 				};
@@ -302,16 +361,25 @@
 			files = (
 				0C73F557205029520031C787 /* qr.gif in Resources */,
 				0C9FD957204EDFFB0094024F /* BuyerRightViewController.xib in Resources */,
+				0C833D6D207B8C13004D093A /* BuyerInfoViewController.xib in Resources */,
 				D79B5784203AF7FB006687A2 /* LaunchScreen.storyboard in Resources */,
 				D79B579B203B01F0006687A2 /* AdminMenuViewController.xib in Resources */,
+				0C833D5D207B87A0004D093A /* BuyerMessagesArhive.xib in Resources */,
 				0C9FD94F204EDFB90094024F /* BuyerHomeViewController.xib in Resources */,
 				D79B5781203AF7FB006687A2 /* Assets.xcassets in Resources */,
+				0C833D75207B8D64004D093A /* DiamondOnlineViewController.xib in Resources */,
+				0C833D65207B8AD2004D093A /* BuyerSettingsViewController.xib in Resources */,
 				D79B577F203AF7FB006687A2 /* Main.storyboard in Resources */,
+				0C833D71207B8D46004D093A /* PartnersViewController.xib in Resources */,
+				0C833D79207B8D78004D093A /* QRCodeViewController.xib in Resources */,
 				D79B579F203B034C006687A2 /* AdminHomeViewController.xib in Resources */,
+				0C833D69207B8BD5004D093A /* EditBuyerViewController.xib in Resources */,
 				D79B57A3203B03B8006687A2 /* AdminRightViewController.xib in Resources */,
 				0C9FD963204EE0E10094024F /* ContrAgentRightViewController.xib in Resources */,
+				0C833D61207B8A6A004D093A /* AboutDiamondClub.xib in Resources */,
 				0C9FD953204EDFD70094024F /* BuyerMenuViewController.xib in Resources */,
 				0C9FD95F204EE0950094024F /* ContrAgentMenuViewController.xib in Resources */,
+				0C833D7D207B906C004D093A /* SharesViewController.xib in Resources */,
 				0C9FD95B204EE0800094024F /* ContAgentHomeViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -362,6 +430,7 @@
 				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
 				"${BUILT_PRODUCTS_DIR}/EFQRCode/EFQRCode.framework",
 				"${BUILT_PRODUCTS_DIR}/EZLoadingActivity/EZLoadingActivity.framework",
+				"${BUILT_PRODUCTS_DIR}/MFCard/MFCard.framework",
 				"${BUILT_PRODUCTS_DIR}/SlideMenuControllerSwift/SlideMenuControllerSwift.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
@@ -369,6 +438,7 @@
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/EFQRCode.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/EZLoadingActivity.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MFCard.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SlideMenuControllerSwift.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -385,14 +455,19 @@
 			files = (
 				0C73F55320500FC10031C787 /* ActionCircleButtons.swift in Sources */,
 				D79B57A5203B04A7006687A2 /* LoginViewController.swift in Sources */,
+				0C833D6C207B8C13004D093A /* BuyerInfoViewController.swift in Sources */,
 				0CB27B71204ECB58009BCBF8 /* RootNavigationController.swift in Sources */,
 				0C9FD962204EE0E10094024F /* ContrAgentRightViewController.swift in Sources */,
+				0C833D60207B8A6A004D093A /* AboutDiamondClub.swift in Sources */,
 				D77BAAC4203DA57300FD504D /* RoundedButton.swift in Sources */,
 				0C9FD95E204EE0950094024F /* ContrAgentMenuViewController.swift in Sources */,
 				0C9FD956204EDFFB0094024F /* BuyerRightViewController.swift in Sources */,
 				D79B5797203B0068006687A2 /* ContrAgentMainViewController.swift in Sources */,
+				0C833D74207B8D64004D093A /* DiamondOnlineViewController.swift in Sources */,
+				0C833D68207B8BD5004D093A /* EditBuyerViewController.swift in Sources */,
 				D79B577C203AF7FB006687A2 /* ViewController.swift in Sources */,
 				D79B5793203B0041006687A2 /* AdminMainViewController.swift in Sources */,
+				0C833D5C207B87A0004D093A /* BuyerMessagesArhive.swift in Sources */,
 				D79B57A8203B04D5006687A2 /* RegistrationViewController.swift in Sources */,
 				0C9FD952204EDFD70094024F /* BuyerMenuViewController.swift in Sources */,
 				D79B577A203AF7FB006687A2 /* AppDelegate.swift in Sources */,
@@ -400,10 +475,14 @@
 				D73D7E16203B1DA900AC7C75 /* Admin.swift in Sources */,
 				D79B5795203B0059006687A2 /* BuyerMainViewController.swift in Sources */,
 				0C9FD95A204EE0800094024F /* ContAgentHomeViewController.swift in Sources */,
+				0C833D64207B8AD2004D093A /* BuyerSettingsViewController.swift in Sources */,
+				0C833D70207B8D46004D093A /* PartnersViewController.swift in Sources */,
 				0C9FD94E204EDFB90094024F /* BuyerHomeViewController.swift in Sources */,
 				D79B579A203B01F0006687A2 /* AdminMenuViewController.swift in Sources */,
+				0C833D7C207B906C004D093A /* SharesViewController.swift in Sources */,
 				D73D7E14203B172B00AC7C75 /* AuthorizationController.swift in Sources */,
 				D79B57A2203B03B8006687A2 /* AdminRightViewController.swift in Sources */,
+				0C833D78207B8D78004D093A /* QRCodeViewController.swift in Sources */,
 				D73D7E1A203B1EEF00AC7C75 /* ContrAgent.swift in Sources */,
 				D73D7E18203B1DC100AC7C75 /* Buyer.swift in Sources */,
 			);
@@ -543,10 +622,11 @@
 			baseConfigurationReference = 9EB26B9E585CFD98A6221E80 /* Pods-Diamond Club.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = "Diamond Club/Diamond Club.entitlements";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 328Q23T368;
 				INFOPLIST_FILE = "Diamond Club/Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.nsd.Diamond-Club";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -560,10 +640,11 @@
 			baseConfigurationReference = 453DC9C4B7B478862508FE29 /* Pods-Diamond Club.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = "Diamond Club/Diamond Club.entitlements";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 328Q23T368;
 				INFOPLIST_FILE = "Diamond Club/Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.nsd.Diamond-Club";
 				PRODUCT_NAME = "$(TARGET_NAME)";

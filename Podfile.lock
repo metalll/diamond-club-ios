@@ -1,13 +1,15 @@
 PODS:
-  - Alamofire (4.7.0)
+  - Alamofire (4.7.1)
   - EFQRCode (4.2.1)
   - EZLoadingActivity (1.01)
+  - MFCard (1.2.5)
   - SlideMenuControllerSwift (4.0.0)
 
 DEPENDENCIES:
   - Alamofire (~> 4.6)
   - EFQRCode (~> 4.2.1)
   - EZLoadingActivity (from `https://github.com/goktugyil/EZLoadingActivity.git`)
+  - MFCard
   - SlideMenuControllerSwift
 
 EXTERNAL SOURCES:
@@ -20,11 +22,12 @@ CHECKOUT OPTIONS:
     :git: https://github.com/goktugyil/EZLoadingActivity.git
 
 SPEC CHECKSUMS:
-  Alamofire: 907e0a98eb68cdb7f9d1f541a563d6ac5dc77b25
+  Alamofire: 68d7d521118d49c615a8d2214d87cdf525599d30
   EFQRCode: f3fd67049faa07adb575495c05d72a34e407a940
   EZLoadingActivity: edd7e387e5197b116ce2cccb3fd747ababc2a510
+  MFCard: f0daf3314c81ba70f493e7877b0cc1c69378527c
   SlideMenuControllerSwift: 021d6318201c53d4d4d3710517d43d6c556c7dd0
 
-PODFILE CHECKSUM: f0804a056a30bdcef2df7648a3de0ff1eec77650
+PODFILE CHECKSUM: 433582130facb36598f076e73fadf3df8391038d
 
 COCOAPODS: 1.4.0
