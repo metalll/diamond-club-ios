@@ -11,31 +11,33 @@ import UIKit
 class ContrAgent: NSObject {
     override init() {
         
-        self.balance = 0
-        self.foreignId = 0
-        self.foreignAdminId = 0
-        self.foreignTargetBuyerId = 0;
-        self.id = 0
-        self.isActive = false
-        self.percent = 0
-        self.shadowBalance = 0
-        self.billingCardNum = ""
-        self.cashbackCardNumber = ""
-        self.email = ""
-        self.userID = -1
+        self.contrAgentBalance = "";
+        self.contrAgentName = "";
+        self.foreingId = 0;
+        self.id = 0;
+        self.image = "";
+        self.locationLatitude = 0;
+        self.locationLongitude = 0;
+        self.millisecondToAppruveCashback = 0;
+        self.percent = 0;
+        self.rating = 0;
+        self.email = "";
     }
     
-    public var balance:Float
-    public var foreignAdminId:Int32
-    public var foreignId:Int32
-    public var foreignTargetBuyerId:Int32
+    
+    
+    public var contrAgentBalance:String
+    public var contrAgentName:String
+    public var foreingId:Int32
     public var id:Int32
-    public var isActive:Bool
+    public var image:String
+    public var locationLatitude:Float
+    public var locationLongitude:Float
+    public var millisecondToAppruveCashback:Int64
     public var percent:Float
-    public var shadowBalance:Float
-    public var billingCardNum:String
-    public var cashbackCardNumber:String
+    public var rating:Float
     public var email:String
-    public var userID:Int32
+    
+
 
 }

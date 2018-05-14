@@ -22,8 +22,8 @@ class BuyerRightViewController: UIViewController {
         if let stringToInput = AuthorizationController.instance.buyer?.cashbackCardNumber {
             
             if let image = EFQRCode.generate(
-                content: stringToInput,
-                watermark: UIImage(named: "qr_logo")?.toCGImage()
+                content: stringToInput
+              
                 ) {
                 
                 self.imageView.image = UIImage.init(cgImage: image);

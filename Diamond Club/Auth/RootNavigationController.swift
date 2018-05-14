@@ -37,7 +37,7 @@ class RootNavigationController: UINavigationController {
             viewController = BuyerMainViewController(mainViewController: BuyerHomeViewController(),leftMenuViewController: BuyerMenuViewController(),rightMenuViewController: BuyerRightViewController())
             break
         case "ROLE_CONTR_AGENT":
-            viewController = ContrAgentMainViewController(mainViewController: ContrAgentMainViewController(), leftMenuViewController: BuyerMenuViewController());
+            viewController = ContrAgentMainViewController(mainViewController: ContAgentHomeViewController(), leftMenuViewController: ContrAgentMenuViewController());
             break
         case "ROLE_ADMIN":
             viewController = AdminMainViewController()

@@ -41,6 +41,7 @@
 		0C9FD962204EE0E10094024F /* ContrAgentRightViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C9FD960204EE0E10094024F /* ContrAgentRightViewController.swift */; };
 		0C9FD963204EE0E10094024F /* ContrAgentRightViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0C9FD961204EE0E10094024F /* ContrAgentRightViewController.xib */; };
 		0CB27B71204ECB58009BCBF8 /* RootNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CB27B70204ECB58009BCBF8 /* RootNavigationController.swift */; };
+		0CC8061C20A9CEA500D3884A /* ContrAgentQRViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CC8061B20A9CEA500D3884A /* ContrAgentQRViewController.swift */; };
 		29E418A5E5E6C3D3CAA1D4AF /* Pods_Diamond_Club.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7902ADCCFBCF4C53EB4D35CF /* Pods_Diamond_Club.framework */; };
 		D73D7E14203B172B00AC7C75 /* AuthorizationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D73D7E13203B172B00AC7C75 /* AuthorizationController.swift */; };
 		D73D7E16203B1DA900AC7C75 /* Admin.swift in Sources */ = {isa = PBXBuildFile; fileRef = D73D7E15203B1DA900AC7C75 /* Admin.swift */; };
@@ -101,6 +102,7 @@
 		0C9FD960204EE0E10094024F /* ContrAgentRightViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContrAgentRightViewController.swift; sourceTree = "<group>"; };
 		0C9FD961204EE0E10094024F /* ContrAgentRightViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ContrAgentRightViewController.xib; sourceTree = "<group>"; };
 		0CB27B70204ECB58009BCBF8 /* RootNavigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootNavigationController.swift; sourceTree = "<group>"; };
+		0CC8061B20A9CEA500D3884A /* ContrAgentQRViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContrAgentQRViewController.swift; sourceTree = "<group>"; };
 		453DC9C4B7B478862508FE29 /* Pods-Diamond Club.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Diamond Club.release.xcconfig"; path = "Pods/Target Support Files/Pods-Diamond Club/Pods-Diamond Club.release.xcconfig"; sourceTree = "<group>"; };
 		7902ADCCFBCF4C53EB4D35CF /* Pods_Diamond_Club.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Diamond_Club.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		9EB26B9E585CFD98A6221E80 /* Pods-Diamond Club.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Diamond Club.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Diamond Club/Pods-Diamond Club.debug.xcconfig"; sourceTree = "<group>"; };
@@ -224,6 +226,7 @@
 				0C9FD95D204EE0950094024F /* ContrAgentMenuViewController.xib */,
 				0C9FD960204EE0E10094024F /* ContrAgentRightViewController.swift */,
 				0C9FD961204EE0E10094024F /* ContrAgentRightViewController.xib */,
+				0CC8061B20A9CEA500D3884A /* ContrAgentQRViewController.swift */,
 			);
 			path = ContrAgent;
 			sourceTree = "<group>";
@@ -431,6 +434,7 @@
 				"${BUILT_PRODUCTS_DIR}/EFQRCode/EFQRCode.framework",
 				"${BUILT_PRODUCTS_DIR}/EZLoadingActivity/EZLoadingActivity.framework",
 				"${BUILT_PRODUCTS_DIR}/MFCard/MFCard.framework",
+				"${BUILT_PRODUCTS_DIR}/QRCodeReader.swift/QRCodeReader.framework",
 				"${BUILT_PRODUCTS_DIR}/SlideMenuControllerSwift/SlideMenuControllerSwift.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
@@ -439,6 +443,7 @@
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/EFQRCode.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/EZLoadingActivity.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MFCard.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/QRCodeReader.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SlideMenuControllerSwift.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -464,6 +469,7 @@
 				0C9FD956204EDFFB0094024F /* BuyerRightViewController.swift in Sources */,
 				D79B5797203B0068006687A2 /* ContrAgentMainViewController.swift in Sources */,
 				0C833D74207B8D64004D093A /* DiamondOnlineViewController.swift in Sources */,
+				0CC8061C20A9CEA500D3884A /* ContrAgentQRViewController.swift in Sources */,
 				0C833D68207B8BD5004D093A /* EditBuyerViewController.swift in Sources */,
 				D79B577C203AF7FB006687A2 /* ViewController.swift in Sources */,
 				D79B5793203B0041006687A2 /* AdminMainViewController.swift in Sources */,

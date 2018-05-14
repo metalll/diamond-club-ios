@@ -42,8 +42,6 @@ class BuyerHomeViewController: UIViewController {
         
             self.title = "Diamond Club"
         
-        
-        
         let artwork = Artwork(title: "ContAgent",
                               locationName: "Odessa",
                               discipline: "Buy your shoose",
@@ -94,35 +92,17 @@ class BuyerHomeViewController: UIViewController {
 
      @IBAction func didTapPartners(_ sender: Any) {
             self.slideMenuController()?.navigationController?.pushViewController(PartnersViewController(), animated: true);
-        
-        
      }
     @IBAction func didTapShares(_ sender: Any) {
-        
+        self.slideMenuController()?.closeLeftNonAnimation();
         self.slideMenuController()?.navigationController?.pushViewController(SharesViewController(), animated: true);
-        
-        
     }
-    
-    
     
     @IBAction func didTapQRCode(_ sender: Any) {
         didTapQrCode(sender);
     }
     
-    
     @IBAction func didTapDiamondOnline(_ sender: Any) {
-        
           self.slideMenuController()?.navigationController?.pushViewController(DiamondOnlineViewController(), animated: true);
-        
     }
-    
-    
-     // In a storyboard-based application, you will often want to do a little preparation before navigation
- 
-     // Get the new view controller using segue.destinationViewController.
-     // Pass the selected object to the new view controller.
-  
-    
-    
 }

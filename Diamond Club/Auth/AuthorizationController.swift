@@ -60,7 +60,6 @@ class AuthorizationController: NSObject {
                 self.applyCurrentUser(completion:completion)
                 print("apply user")
             } else {
-                
                 completion(false);
             }
         }
@@ -98,6 +97,8 @@ class AuthorizationController: NSObject {
     public func applyCurrentUser(completion:@escaping (Bool)->Void) {
         let delegate = UIApplication.shared.delegate as! AppDelegate
         delegate.registerForPushNotifications();
+        
+        
         Alamofire.request(authEndpoint + applyCurrentUserPath, method:.post).responseJSON { (responce) in
             
             if (responce.response?.statusCode == self.kSuccessCode) {
@@ -113,12 +114,14 @@ class AuthorizationController: NSObject {
                                 self.loadBuyer(json:data)
                                 print("load buyer")
                             }
+                            if (role == "ROLE_CONTR_AGENT") {
+                                self.loadContAgent(json: data)
+                            }
                         }
                     }
                 }
                 completion(true);
             } else {
-                
                 completion(false);
             }
         }
@@ -127,8 +130,6 @@ class AuthorizationController: NSObject {
     private func loadBuyer(json : [String : Any]) {
         
         if let fullInfo = json["fullInfo"] as? [String : Any] {
-    
-        
         
         self.buyer = Buyer();
         
@@ -140,7 +141,6 @@ class AuthorizationController: NSObject {
         self.buyer?.isActive = (fullInfo["isActive"] as? String)! == "YES"
         self.buyer?.percent = (fullInfo["percent"] as? Float)!
         
-            
             if let user = json["user"] as? [String : Any] {
                 self.buyer?.billingCardNum = (user["cashbackCardNumber"] as? String)!
                 self.buyer?.name = user.keys.contains("firstName") ? (user["firstName"] as? String)! : ""
@@ -148,18 +148,29 @@ class AuthorizationController: NSObject {
                 self.buyer?.avatarImage = user.keys.contains("avatar") ? (user["avatar"] as? String)! : ""
             }
         
-       
             print("send push")
             NotificationCenter.default.post(name: NSNotification.Name(rawValue: NSNotificationCenterDidSingUpNotification), object: nil,userInfo:["role":"ROLE_BUYER"])
-        
-        
         }
         
     }
     
-    private func loadContAgent(baseInfo:Dictionary<String,Any?>,fullInfo:Dictionary<String,Any?>) {
+    private func loadContAgent(json : [String : Any]) {
        
-            NotificationCenter.default.post(name: NSNotification.Name(rawValue: NSNotificationCenterDidSingUpNotification), object: nil,userInfo:["role":"ROLE_CONTR_AGENT"])
+        self.contAgent = ContrAgent();
+        
+        if let fullInfo = json["fullInfo"] as? [String : Any] {
+            self.contAgent?.contrAgentBalance = (fullInfo["contrAgentBalance"] as? String)!
+            self.contAgent?.contrAgentName = (fullInfo["contrAgentName"] as? String)!
+            self.contAgent?.foreingId = (fullInfo["foreingId"] as? Int32)!
+            self.contAgent?.id = (fullInfo["id"] as? Int32)!
+            self.contAgent?.image = (fullInfo["image"] as? String)!
+               self.contAgent?.locationLatitude = (fullInfo["locationLatitude"] as? NSNumber)!.floatValue
+            self.contAgent?.locationLongitude = (fullInfo["locationLongitude"] as? NSNumber)!.floatValue
+            self.contAgent?.millisecondToAppruveCashback = (fullInfo["millisecondToAppruveCashback"] as? Int64)!
+            self.contAgent?.percent =  (fullInfo["percent"] as? Float)!
+            self.contAgent?.rating = (fullInfo["rating"] as? Float)!
+        }
+        NotificationCenter.default.post(name: NSNotification.Name(rawValue: NSNotificationCenterDidSingUpNotification), object: nil,userInfo:["role":"ROLE_CONTR_AGENT"])
         
     }
     

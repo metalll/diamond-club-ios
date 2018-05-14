@@ -11,4 +11,5 @@ target 'Diamond Club' do
   pod 'EZLoadingActivity', :git => 'https://github.com/goktugyil/EZLoadingActivity.git'
   pod 'EFQRCode', '~> 4.2.1'
   pod 'MFCard'
+  pod 'QRCodeReader.swift', '~> 8.1.1'
 end

@@ -50,24 +50,28 @@ class BuyerMenuViewController: UIViewController,MFCardDelegate {
     }
     
     @IBAction func didTapMessageArhive(_ sender: Any) {
-        
+        self.slideMenuController()?.closeLeftNonAnimation();
         self.slideMenuController()?.navigationController?.pushViewController(BuyerMessagesArhive(), animated: true);
     }
     
     
     @IBAction func didTapEdit(_ sender: Any) {
-            self.slideMenuController()?.navigationController?.pushViewController(EditBuyerViewController(), animated: true);
+        self.slideMenuController()?.closeLeftNonAnimation();
+        self.slideMenuController()?.navigationController?.pushViewController(EditBuyerViewController(), animated: true);
     }
     
     @IBAction func didTapInfo(_ sender: Any) {
-            self.slideMenuController()?.navigationController?.pushViewController(BuyerInfoViewController(), animated: true);
+        self.slideMenuController()?.closeLeftNonAnimation();
+        self.slideMenuController()?.navigationController?.pushViewController(BuyerInfoViewController(), animated: true);
     }
     
     @IBAction func didTapAbout(_ sender: Any) {
+        self.slideMenuController()?.closeLeftNonAnimation();
         self.slideMenuController()?.navigationController?.pushViewController(AboutDiamondClub(), animated: true);
     }
     
     @IBAction func didTapSettings(_ sender: Any) {
+        self.slideMenuController()?.closeLeftNonAnimation();
         self.slideMenuController()?.navigationController?.pushViewController(BuyerSettingsViewController(), animated: true);
     }
     
@@ -75,7 +79,6 @@ class BuyerMenuViewController: UIViewController,MFCardDelegate {
         
         var myCard : MFCardView
         myCard  = MFCardView(withViewController: (self.slideMenuController()?.navigationController)!)
-        
         
         myCard.delegate = self
         myCard.autoDismiss = true
@@ -90,6 +93,22 @@ class BuyerMenuViewController: UIViewController,MFCardDelegate {
     
     
     @IBAction func didTapLogout(_ sender: Any) {
+        
+        
+        
+        let alert = UIAlertController(title: "Logout", message: "Did you want logout?", preferredStyle: .alert)
+        
+        alert.addAction(UIAlertAction(title: "Yes", style: .default, handler: { (action) in
+            
+            
+            self.slideMenuController()?.navigationController?.setNavigationBarHidden(false, animated: false); self.slideMenuController()?.navigationController?.setViewControllers([(UIApplication.shared.keyWindow?.rootViewController?.storyboard?.instantiateViewController(withIdentifier: "ROOT"))!], animated: true);
+            
+            
+        }));
+        alert.addAction(UIAlertAction(title: "No", style: .cancel, handler: nil))
+        
+        self.present(alert, animated: true)
+        
     }
     
     func convertImageToBase64(image: UIImage) -> String {
