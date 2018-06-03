@@ -54,14 +54,18 @@ class AuthorizationController: NSObject {
         let parameters:Parameters = [kLogin:login,
                                      kPassword:password]
         
-        Alamofire.request(authEndpoint + loginPath, method:.post, parameters: parameters).responseString { (responce) in
+        Alamofire.request(authEndpoint + loginPath, method:.post, parameters: parameters).responseJSON { response in
             
-            if (responce.response?.statusCode == self.kSuccessCode) {
+            if (response.response?.statusCode == self.kSuccessCode) {
+                self.saveCookies(response: response);
                 self.applyCurrentUser(completion:completion)
+                
                 print("apply user")
             } else {
                 completion(false);
             }
+           
+            
         }
     }
     
@@ -96,16 +100,19 @@ class AuthorizationController: NSObject {
     
     public func applyCurrentUser(completion:@escaping (Bool)->Void) {
         let delegate = UIApplication.shared.delegate as! AppDelegate
-        delegate.registerForPushNotifications();
-        
-        
+        self.loadCookies();
+      
         Alamofire.request(authEndpoint + applyCurrentUserPath, method:.post).responseJSON { (responce) in
             
             if (responce.response?.statusCode == self.kSuccessCode) {
-                
+              
                 if let json = responce.result.value as? [String: Any] {
                     print("json \(json)")
-                    
+                   
+                    if (json["status"] as! String == "BAD") {
+                           completion(false);
+                    } else {
+                        delegate.registerForPushNotifications();
                     if let data = json["responceData"] as? [String: Any] {
                         
                         if let role = data["role"] as? String {
@@ -121,6 +128,7 @@ class AuthorizationController: NSObject {
                     }
                 }
                 completion(true);
+                }
             } else {
                 completion(false);
             }
@@ -154,6 +162,17 @@ class AuthorizationController: NSObject {
         
     }
     
+    public func logout() {
+        
+        UserDefaults.standard.removeObject(forKey: "savedCookies")
+        let cookieJar = HTTPCookieStorage.shared
+        for cookie in cookieJar.cookies! {
+            cookieJar.deleteCookie(cookie)
+        }
+         UserDefaults.standard.synchronize()
+    }
+    
+    
     private func loadContAgent(json : [String : Any]) {
        
         self.contAgent = ContrAgent();
@@ -167,7 +186,7 @@ class AuthorizationController: NSObject {
                self.contAgent?.locationLatitude = (fullInfo["locationLatitude"] as? NSNumber)!.floatValue
             self.contAgent?.locationLongitude = (fullInfo["locationLongitude"] as? NSNumber)!.floatValue
             self.contAgent?.millisecondToAppruveCashback = (fullInfo["millisecondToAppruveCashback"] as? Int64)!
-            self.contAgent?.percent =  (fullInfo["percent"] as? Float)!
+            self.contAgent?.percent =  (fullInfo["percent"] as? NSNumber)!.floatValue
             self.contAgent?.rating = (fullInfo["rating"] as? Float)!
         }
         NotificationCenter.default.post(name: NSNotification.Name(rawValue: NSNotificationCenterDidSingUpNotification), object: nil,userInfo:["role":"ROLE_CONTR_AGENT"])
@@ -180,5 +199,29 @@ class AuthorizationController: NSObject {
         }
     }
     
+    func loadCookies() {
+        guard let cookieArray = UserDefaults.standard.array(forKey: "savedCookies") as? [[HTTPCookiePropertyKey: Any]] else { return }
+        for cookieProperties in cookieArray {
+            if let cookie = HTTPCookie(properties: cookieProperties) {
+                HTTPCookieStorage.shared.setCookie(cookie)
+            }
+        }
+    }
+    
+    func saveCookies(response: DataResponse<Any>) {
+        let headerFields = response.response?.allHeaderFields as! [String: String]
+        let url = response.response?.url
+        let cookies = HTTPCookie.cookies(withResponseHeaderFields: headerFields, for: url!)
+        var cookieArray = [[HTTPCookiePropertyKey: Any]]()
+        for cookie in cookies {
+            cookieArray.append(cookie.properties!)
+        }
+        UserDefaults.standard.set(cookieArray, forKey: "savedCookies")
+        UserDefaults.standard.synchronize()
+    }
+    
 }
+
+
+
 

@@ -8,7 +8,7 @@
 
 import UIKit
 import EFQRCode
-
+import QRCode
 
 
 class BuyerRightViewController: UIViewController {
@@ -16,29 +16,10 @@ class BuyerRightViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        
-
-        if let stringToInput = AuthorizationController.instance.buyer?.cashbackCardNumber {
+        if let stringToInput = AuthorizationController.instance.buyer?.billingCardNum {
             
-            if let image = EFQRCode.generate(
-                content: stringToInput
-              
-                ) {
-                
-                self.imageView.image = UIImage.init(cgImage: image);
-                
-                print("Create QRCode image success: \(image)")
-            } else {
-                print("Create QRCode image failed!")
-            }
-            
-            
+            let qrCode = QRCode(stringToInput)
+            self.imageView.image = qrCode?.image;
         }
     }
-        
-
-
-    
-
 }

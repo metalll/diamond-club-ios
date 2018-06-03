@@ -7,6 +7,14 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0C10960220B1C42900060B70 /* ContrAgentSettings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C10960020B1C42900060B70 /* ContrAgentSettings.swift */; };
+		0C10960320B1C42900060B70 /* ContrAgentSettings.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0C10960120B1C42900060B70 /* ContrAgentSettings.xib */; };
+		0C10960620B1C64100060B70 /* ContAgentSetCashbackValueViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C10960420B1C64100060B70 /* ContAgentSetCashbackValueViewController.swift */; };
+		0C10960720B1C64100060B70 /* ContAgentSetCashbackValueViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0C10960520B1C64100060B70 /* ContAgentSetCashbackValueViewController.xib */; };
+		0C10960C20B1CE3400060B70 /* PartnerCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C10960A20B1CE3400060B70 /* PartnerCell.swift */; };
+		0C10960D20B1CE3400060B70 /* PartnerCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0C10960B20B1CE3400060B70 /* PartnerCell.xib */; };
+		0C10961020B1D93E00060B70 /* FullPartner.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C10960E20B1D93E00060B70 /* FullPartner.swift */; };
+		0C10961120B1D93E00060B70 /* FullPartner.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0C10960F20B1D93E00060B70 /* FullPartner.xib */; };
 		0C73F55320500FC10031C787 /* ActionCircleButtons.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C73F55220500FC10031C787 /* ActionCircleButtons.swift */; };
 		0C73F557205029520031C787 /* qr.gif in Resources */ = {isa = PBXBuildFile; fileRef = 0C73F556205029520031C787 /* qr.gif */; };
 		0C73F55920503FE10031C787 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0C73F55820503FE10031C787 /* MapKit.framework */; };
@@ -41,6 +49,16 @@
 		0C9FD962204EE0E10094024F /* ContrAgentRightViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C9FD960204EE0E10094024F /* ContrAgentRightViewController.swift */; };
 		0C9FD963204EE0E10094024F /* ContrAgentRightViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0C9FD961204EE0E10094024F /* ContrAgentRightViewController.xib */; };
 		0CB27B71204ECB58009BCBF8 /* RootNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CB27B70204ECB58009BCBF8 /* RootNavigationController.swift */; };
+		0CBDBD9B20BAB90400E88030 /* ContrAgentInfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CBDBD9920BAB90400E88030 /* ContrAgentInfoViewController.swift */; };
+		0CBDBD9C20BAB90400E88030 /* ContrAgentInfoViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0CBDBD9A20BAB90400E88030 /* ContrAgentInfoViewController.xib */; };
+		0CBDBD9F20BABA2200E88030 /* ContrAgentStatisticViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CBDBD9D20BABA2200E88030 /* ContrAgentStatisticViewController.swift */; };
+		0CBDBDA020BABA2200E88030 /* ContrAgentStatisticViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0CBDBD9E20BABA2200E88030 /* ContrAgentStatisticViewController.xib */; };
+		0CBDBDA320BABAA900E88030 /* ContAgentOperationsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CBDBDA120BABAA900E88030 /* ContAgentOperationsViewController.swift */; };
+		0CBDBDA420BABAA900E88030 /* ContAgentOperationsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0CBDBDA220BABAA900E88030 /* ContAgentOperationsViewController.xib */; };
+		0CBDBDA620BAC11200E88030 /* DiamondClubRootViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CBDBDA520BAC11200E88030 /* DiamondClubRootViewController.swift */; };
+		0CBDBDA820BAE9A300E88030 /* ActivityItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CBDBDA720BAE9A300E88030 /* ActivityItem.swift */; };
+		0CBDBDAD20BAEF5F00E88030 /* ActivityTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CBDBDAB20BAEF5F00E88030 /* ActivityTableViewCell.swift */; };
+		0CBDBDAE20BAEF5F00E88030 /* ActivityTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0CBDBDAC20BAEF5F00E88030 /* ActivityTableViewCell.xib */; };
 		0CC8061C20A9CEA500D3884A /* ContrAgentQRViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CC8061B20A9CEA500D3884A /* ContrAgentQRViewController.swift */; };
 		29E418A5E5E6C3D3CAA1D4AF /* Pods_Diamond_Club.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7902ADCCFBCF4C53EB4D35CF /* Pods_Diamond_Club.framework */; };
 		D73D7E14203B172B00AC7C75 /* AuthorizationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D73D7E13203B172B00AC7C75 /* AuthorizationController.swift */; };
@@ -67,6 +85,14 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0C10960020B1C42900060B70 /* ContrAgentSettings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContrAgentSettings.swift; sourceTree = "<group>"; };
+		0C10960120B1C42900060B70 /* ContrAgentSettings.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ContrAgentSettings.xib; sourceTree = "<group>"; };
+		0C10960420B1C64100060B70 /* ContAgentSetCashbackValueViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContAgentSetCashbackValueViewController.swift; sourceTree = "<group>"; };
+		0C10960520B1C64100060B70 /* ContAgentSetCashbackValueViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ContAgentSetCashbackValueViewController.xib; sourceTree = "<group>"; };
+		0C10960A20B1CE3400060B70 /* PartnerCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PartnerCell.swift; sourceTree = "<group>"; };
+		0C10960B20B1CE3400060B70 /* PartnerCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PartnerCell.xib; sourceTree = "<group>"; };
+		0C10960E20B1D93E00060B70 /* FullPartner.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FullPartner.swift; sourceTree = "<group>"; };
+		0C10960F20B1D93E00060B70 /* FullPartner.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FullPartner.xib; sourceTree = "<group>"; };
 		0C73F55220500FC10031C787 /* ActionCircleButtons.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActionCircleButtons.swift; sourceTree = "<group>"; };
 		0C73F556205029520031C787 /* qr.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = qr.gif; sourceTree = "<group>"; };
 		0C73F55820503FE10031C787 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
@@ -102,7 +128,19 @@
 		0C9FD960204EE0E10094024F /* ContrAgentRightViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContrAgentRightViewController.swift; sourceTree = "<group>"; };
 		0C9FD961204EE0E10094024F /* ContrAgentRightViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ContrAgentRightViewController.xib; sourceTree = "<group>"; };
 		0CB27B70204ECB58009BCBF8 /* RootNavigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootNavigationController.swift; sourceTree = "<group>"; };
+		0CBDBD9920BAB90400E88030 /* ContrAgentInfoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContrAgentInfoViewController.swift; sourceTree = "<group>"; };
+		0CBDBD9A20BAB90400E88030 /* ContrAgentInfoViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ContrAgentInfoViewController.xib; sourceTree = "<group>"; };
+		0CBDBD9D20BABA2200E88030 /* ContrAgentStatisticViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContrAgentStatisticViewController.swift; sourceTree = "<group>"; };
+		0CBDBD9E20BABA2200E88030 /* ContrAgentStatisticViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ContrAgentStatisticViewController.xib; sourceTree = "<group>"; };
+		0CBDBDA120BABAA900E88030 /* ContAgentOperationsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContAgentOperationsViewController.swift; sourceTree = "<group>"; };
+		0CBDBDA220BABAA900E88030 /* ContAgentOperationsViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ContAgentOperationsViewController.xib; sourceTree = "<group>"; };
+		0CBDBDA520BAC11200E88030 /* DiamondClubRootViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiamondClubRootViewController.swift; sourceTree = "<group>"; };
+		0CBDBDA720BAE9A300E88030 /* ActivityItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivityItem.swift; sourceTree = "<group>"; };
+		0CBDBDAB20BAEF5F00E88030 /* ActivityTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivityTableViewCell.swift; sourceTree = "<group>"; };
+		0CBDBDAC20BAEF5F00E88030 /* ActivityTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ActivityTableViewCell.xib; sourceTree = "<group>"; };
 		0CC8061B20A9CEA500D3884A /* ContrAgentQRViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContrAgentQRViewController.swift; sourceTree = "<group>"; };
+		0CEFA76320C4011B007B0CBB /* ru */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ru; path = ru.lproj/Main.strings; sourceTree = "<group>"; };
+		0CEFA76420C4011B007B0CBB /* ru */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ru; path = ru.lproj/LaunchScreen.strings; sourceTree = "<group>"; };
 		453DC9C4B7B478862508FE29 /* Pods-Diamond Club.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Diamond Club.release.xcconfig"; path = "Pods/Target Support Files/Pods-Diamond Club/Pods-Diamond Club.release.xcconfig"; sourceTree = "<group>"; };
 		7902ADCCFBCF4C53EB4D35CF /* Pods_Diamond_Club.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Diamond_Club.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		9EB26B9E585CFD98A6221E80 /* Pods-Diamond Club.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Diamond Club.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Diamond Club/Pods-Diamond Club.debug.xcconfig"; sourceTree = "<group>"; };
@@ -227,6 +265,19 @@
 				0C9FD960204EE0E10094024F /* ContrAgentRightViewController.swift */,
 				0C9FD961204EE0E10094024F /* ContrAgentRightViewController.xib */,
 				0CC8061B20A9CEA500D3884A /* ContrAgentQRViewController.swift */,
+				0C10960020B1C42900060B70 /* ContrAgentSettings.swift */,
+				0C10960120B1C42900060B70 /* ContrAgentSettings.xib */,
+				0C10960420B1C64100060B70 /* ContAgentSetCashbackValueViewController.swift */,
+				0C10960520B1C64100060B70 /* ContAgentSetCashbackValueViewController.xib */,
+				0CBDBD9920BAB90400E88030 /* ContrAgentInfoViewController.swift */,
+				0CBDBD9A20BAB90400E88030 /* ContrAgentInfoViewController.xib */,
+				0CBDBD9D20BABA2200E88030 /* ContrAgentStatisticViewController.swift */,
+				0CBDBD9E20BABA2200E88030 /* ContrAgentStatisticViewController.xib */,
+				0CBDBDA120BABAA900E88030 /* ContAgentOperationsViewController.swift */,
+				0CBDBDA220BABAA900E88030 /* ContAgentOperationsViewController.xib */,
+				0CBDBDA720BAE9A300E88030 /* ActivityItem.swift */,
+				0CBDBDAB20BAEF5F00E88030 /* ActivityTableViewCell.swift */,
+				0CBDBDAC20BAEF5F00E88030 /* ActivityTableViewCell.xib */,
 			);
 			path = ContrAgent;
 			sourceTree = "<group>";
@@ -259,6 +310,10 @@
 				0C833D77207B8D78004D093A /* QRCodeViewController.xib */,
 				0C833D7A207B906C004D093A /* SharesViewController.swift */,
 				0C833D7B207B906C004D093A /* SharesViewController.xib */,
+				0C10960A20B1CE3400060B70 /* PartnerCell.swift */,
+				0C10960B20B1CE3400060B70 /* PartnerCell.xib */,
+				0C10960E20B1D93E00060B70 /* FullPartner.swift */,
+				0C10960F20B1D93E00060B70 /* FullPartner.xib */,
 			);
 			path = Buyer;
 			sourceTree = "<group>";
@@ -288,6 +343,7 @@
 				D73D7E17203B1DC100AC7C75 /* Buyer.swift */,
 				D73D7E19203B1EEF00AC7C75 /* ContrAgent.swift */,
 				0CB27B70204ECB58009BCBF8 /* RootNavigationController.swift */,
+				0CBDBDA520BAC11200E88030 /* DiamondClubRootViewController.swift */,
 			);
 			path = Auth;
 			sourceTree = "<group>";
@@ -322,7 +378,7 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 0920;
-				LastUpgradeCheck = 0920;
+				LastUpgradeCheck = 0930;
 				ORGANIZATIONNAME = "user-letsgo6";
 				TargetAttributes = {
 					D79B5775203AF7FB006687A2 = {
@@ -363,27 +419,35 @@
 			buildActionMask = 2147483647;
 			files = (
 				0C73F557205029520031C787 /* qr.gif in Resources */,
+				0CBDBD9C20BAB90400E88030 /* ContrAgentInfoViewController.xib in Resources */,
 				0C9FD957204EDFFB0094024F /* BuyerRightViewController.xib in Resources */,
 				0C833D6D207B8C13004D093A /* BuyerInfoViewController.xib in Resources */,
 				D79B5784203AF7FB006687A2 /* LaunchScreen.storyboard in Resources */,
 				D79B579B203B01F0006687A2 /* AdminMenuViewController.xib in Resources */,
+				0CBDBDA020BABA2200E88030 /* ContrAgentStatisticViewController.xib in Resources */,
 				0C833D5D207B87A0004D093A /* BuyerMessagesArhive.xib in Resources */,
 				0C9FD94F204EDFB90094024F /* BuyerHomeViewController.xib in Resources */,
+				0C10961120B1D93E00060B70 /* FullPartner.xib in Resources */,
 				D79B5781203AF7FB006687A2 /* Assets.xcassets in Resources */,
 				0C833D75207B8D64004D093A /* DiamondOnlineViewController.xib in Resources */,
 				0C833D65207B8AD2004D093A /* BuyerSettingsViewController.xib in Resources */,
 				D79B577F203AF7FB006687A2 /* Main.storyboard in Resources */,
 				0C833D71207B8D46004D093A /* PartnersViewController.xib in Resources */,
+				0CBDBDA420BABAA900E88030 /* ContAgentOperationsViewController.xib in Resources */,
 				0C833D79207B8D78004D093A /* QRCodeViewController.xib in Resources */,
 				D79B579F203B034C006687A2 /* AdminHomeViewController.xib in Resources */,
 				0C833D69207B8BD5004D093A /* EditBuyerViewController.xib in Resources */,
 				D79B57A3203B03B8006687A2 /* AdminRightViewController.xib in Resources */,
 				0C9FD963204EE0E10094024F /* ContrAgentRightViewController.xib in Resources */,
+				0C10960320B1C42900060B70 /* ContrAgentSettings.xib in Resources */,
+				0CBDBDAE20BAEF5F00E88030 /* ActivityTableViewCell.xib in Resources */,
 				0C833D61207B8A6A004D093A /* AboutDiamondClub.xib in Resources */,
 				0C9FD953204EDFD70094024F /* BuyerMenuViewController.xib in Resources */,
 				0C9FD95F204EE0950094024F /* ContrAgentMenuViewController.xib in Resources */,
 				0C833D7D207B906C004D093A /* SharesViewController.xib in Resources */,
+				0C10960D20B1CE3400060B70 /* PartnerCell.xib in Resources */,
 				0C9FD95B204EE0800094024F /* ContAgentHomeViewController.xib in Resources */,
+				0C10960720B1C64100060B70 /* ContAgentSetCashbackValueViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -434,8 +498,10 @@
 				"${BUILT_PRODUCTS_DIR}/EFQRCode/EFQRCode.framework",
 				"${BUILT_PRODUCTS_DIR}/EZLoadingActivity/EZLoadingActivity.framework",
 				"${BUILT_PRODUCTS_DIR}/MFCard/MFCard.framework",
+				"${BUILT_PRODUCTS_DIR}/QRCode/QRCode.framework",
 				"${BUILT_PRODUCTS_DIR}/QRCodeReader.swift/QRCodeReader.framework",
 				"${BUILT_PRODUCTS_DIR}/SlideMenuControllerSwift/SlideMenuControllerSwift.framework",
+				"${BUILT_PRODUCTS_DIR}/TTGSnackbar/TTGSnackbar.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
@@ -443,8 +509,10 @@
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/EFQRCode.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/EZLoadingActivity.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MFCard.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/QRCode.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/QRCodeReader.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SlideMenuControllerSwift.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/TTGSnackbar.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -460,19 +528,24 @@
 			files = (
 				0C73F55320500FC10031C787 /* ActionCircleButtons.swift in Sources */,
 				D79B57A5203B04A7006687A2 /* LoginViewController.swift in Sources */,
+				0C10960620B1C64100060B70 /* ContAgentSetCashbackValueViewController.swift in Sources */,
 				0C833D6C207B8C13004D093A /* BuyerInfoViewController.swift in Sources */,
 				0CB27B71204ECB58009BCBF8 /* RootNavigationController.swift in Sources */,
+				0CBDBD9F20BABA2200E88030 /* ContrAgentStatisticViewController.swift in Sources */,
 				0C9FD962204EE0E10094024F /* ContrAgentRightViewController.swift in Sources */,
+				0CBDBDAD20BAEF5F00E88030 /* ActivityTableViewCell.swift in Sources */,
 				0C833D60207B8A6A004D093A /* AboutDiamondClub.swift in Sources */,
 				D77BAAC4203DA57300FD504D /* RoundedButton.swift in Sources */,
 				0C9FD95E204EE0950094024F /* ContrAgentMenuViewController.swift in Sources */,
 				0C9FD956204EDFFB0094024F /* BuyerRightViewController.swift in Sources */,
 				D79B5797203B0068006687A2 /* ContrAgentMainViewController.swift in Sources */,
 				0C833D74207B8D64004D093A /* DiamondOnlineViewController.swift in Sources */,
+				0C10960C20B1CE3400060B70 /* PartnerCell.swift in Sources */,
 				0CC8061C20A9CEA500D3884A /* ContrAgentQRViewController.swift in Sources */,
 				0C833D68207B8BD5004D093A /* EditBuyerViewController.swift in Sources */,
 				D79B577C203AF7FB006687A2 /* ViewController.swift in Sources */,
 				D79B5793203B0041006687A2 /* AdminMainViewController.swift in Sources */,
+				0C10960220B1C42900060B70 /* ContrAgentSettings.swift in Sources */,
 				0C833D5C207B87A0004D093A /* BuyerMessagesArhive.swift in Sources */,
 				D79B57A8203B04D5006687A2 /* RegistrationViewController.swift in Sources */,
 				0C9FD952204EDFD70094024F /* BuyerMenuViewController.swift in Sources */,
@@ -480,15 +553,20 @@
 				D79B579E203B034C006687A2 /* AdminHomeViewController.swift in Sources */,
 				D73D7E16203B1DA900AC7C75 /* Admin.swift in Sources */,
 				D79B5795203B0059006687A2 /* BuyerMainViewController.swift in Sources */,
+				0CBDBD9B20BAB90400E88030 /* ContrAgentInfoViewController.swift in Sources */,
 				0C9FD95A204EE0800094024F /* ContAgentHomeViewController.swift in Sources */,
 				0C833D64207B8AD2004D093A /* BuyerSettingsViewController.swift in Sources */,
 				0C833D70207B8D46004D093A /* PartnersViewController.swift in Sources */,
 				0C9FD94E204EDFB90094024F /* BuyerHomeViewController.swift in Sources */,
+				0CBDBDA620BAC11200E88030 /* DiamondClubRootViewController.swift in Sources */,
 				D79B579A203B01F0006687A2 /* AdminMenuViewController.swift in Sources */,
+				0CBDBDA320BABAA900E88030 /* ContAgentOperationsViewController.swift in Sources */,
 				0C833D7C207B906C004D093A /* SharesViewController.swift in Sources */,
 				D73D7E14203B172B00AC7C75 /* AuthorizationController.swift in Sources */,
 				D79B57A2203B03B8006687A2 /* AdminRightViewController.swift in Sources */,
+				0C10961020B1D93E00060B70 /* FullPartner.swift in Sources */,
 				0C833D78207B8D78004D093A /* QRCodeViewController.swift in Sources */,
+				0CBDBDA820BAE9A300E88030 /* ActivityItem.swift in Sources */,
 				D73D7E1A203B1EEF00AC7C75 /* ContrAgent.swift in Sources */,
 				D73D7E18203B1DC100AC7C75 /* Buyer.swift in Sources */,
 			);
@@ -501,6 +579,7 @@
 			isa = PBXVariantGroup;
 			children = (
 				D79B577E203AF7FB006687A2 /* Base */,
+				0CEFA76320C4011B007B0CBB /* ru */,
 			);
 			name = Main.storyboard;
 			sourceTree = "<group>";
@@ -509,6 +588,7 @@
 			isa = PBXVariantGroup;
 			children = (
 				D79B5783203AF7FB006687A2 /* Base */,
+				0CEFA76420C4011B007B0CBB /* ru */,
 			);
 			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
@@ -520,6 +600,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
@@ -530,6 +611,7 @@
 				CLANG_WARN_BOOL_CONVERSION = YES;
 				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
 				CLANG_WARN_EMPTY_BODY = YES;
@@ -537,6 +619,7 @@
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
@@ -577,6 +660,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
@@ -587,6 +671,7 @@
 				CLANG_WARN_BOOL_CONVERSION = YES;
 				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
 				CLANG_WARN_EMPTY_BODY = YES;
@@ -594,6 +679,7 @@
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;

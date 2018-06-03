@@ -93,46 +93,34 @@ class BuyerMenuViewController: UIViewController,MFCardDelegate {
     
     
     @IBAction func didTapLogout(_ sender: Any) {
-        
-        
-        
+
         let alert = UIAlertController(title: "Logout", message: "Did you want logout?", preferredStyle: .alert)
         
         alert.addAction(UIAlertAction(title: "Yes", style: .default, handler: { (action) in
             
-            
+            AuthorizationController.instance.logout();
             self.slideMenuController()?.navigationController?.setNavigationBarHidden(false, animated: false); self.slideMenuController()?.navigationController?.setViewControllers([(UIApplication.shared.keyWindow?.rootViewController?.storyboard?.instantiateViewController(withIdentifier: "ROOT"))!], animated: true);
             
             
         }));
         alert.addAction(UIAlertAction(title: "No", style: .cancel, handler: nil))
-        
         self.present(alert, animated: true)
-        
     }
     
     func convertImageToBase64(image: UIImage) -> String {
-        
         let imageData = UIImagePNGRepresentation(image)
         let base64String = imageData?.base64EncodedString()
-        
         return base64String!
         
-    }// end convertImageToBase64
-    
-    
-    // prgm mark ----
-    
-    // convert images into base64 and keep them into string
+    }
     
     func convertBase64ToImage(base64String: String) -> UIImage {
         
         let decodedData = NSData(base64Encoded: base64String)
-        
-        
         let decodedimage = UIImage(data: decodedData! as Data)
-        
         return decodedimage!
         
     }// end convertBase64ToImage
+    
+
 }

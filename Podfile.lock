@@ -3,16 +3,20 @@ PODS:
   - EFQRCode (4.2.1)
   - EZLoadingActivity (1.01)
   - MFCard (1.2.5)
+  - QRCode (2.0)
   - QRCodeReader.swift (8.1.1)
   - SlideMenuControllerSwift (4.0.0)
+  - TTGSnackbar (1.7.3)
 
 DEPENDENCIES:
   - Alamofire (~> 4.6)
   - EFQRCode (~> 4.2.1)
   - EZLoadingActivity (from `https://github.com/goktugyil/EZLoadingActivity.git`)
   - MFCard
+  - QRCode
   - QRCodeReader.swift (~> 8.1.1)
   - SlideMenuControllerSwift
+  - TTGSnackbar
 
 EXTERNAL SOURCES:
   EZLoadingActivity:
@@ -28,9 +32,11 @@ SPEC CHECKSUMS:
   EFQRCode: f3fd67049faa07adb575495c05d72a34e407a940
   EZLoadingActivity: edd7e387e5197b116ce2cccb3fd747ababc2a510
   MFCard: f0daf3314c81ba70f493e7877b0cc1c69378527c
+  QRCode: f98a1886c8f37523704a7512a4c0cd45b34c18a4
   QRCodeReader.swift: b164a681887de276d405ff02bce854d82cd6360b
   SlideMenuControllerSwift: 021d6318201c53d4d4d3710517d43d6c556c7dd0
+  TTGSnackbar: a66e929fd17d662152ec0964990a86e966310edb
 
-PODFILE CHECKSUM: c9bc32189ac4cdf47609b11c138a9d5b00d373be
+PODFILE CHECKSUM: 55d18eb208636953240186ec8d0250b73e1c1bad
 
 COCOAPODS: 1.4.0

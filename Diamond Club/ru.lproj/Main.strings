@@ -1,0 +1,39 @@
+
+/* Class = "UIButton"; normalTitle = "Sign Up"; ObjectID = "08O-wC-VVN"; */
+"08O-wC-VVN.normalTitle" = "Sign Up";
+
+/* Class = "UIButton"; normalTitle = "Sign Up"; ObjectID = "77A-i3-Ex7"; */
+"77A-i3-Ex7.normalTitle" = "Sign Up";
+
+/* Class = "UIButton"; normalTitle = "Sign In"; ObjectID = "ACN-w4-B2L"; */
+"ACN-w4-B2L.normalTitle" = "Sign In";
+
+/* Class = "UIViewController"; title = "Diamond Club"; ObjectID = "BYZ-38-t0r"; */
+"BYZ-38-t0r.title" = "Diamond Club";
+
+/* Class = "UIButton"; normalTitle = "Sing In"; ObjectID = "ByB-N6-Bg8"; */
+"ByB-N6-Bg8.normalTitle" = "Sing In";
+
+/* Class = "UITextField"; placeholder = "Login"; ObjectID = "Gul-r5-6zc"; */
+"Gul-r5-6zc.placeholder" = "Login";
+
+/* Class = "UITextField"; placeholder = "Password"; ObjectID = "QxB-Rb-pbd"; */
+"QxB-Rb-pbd.placeholder" = "Password";
+
+/* Class = "UIViewController"; title = "Sign Up"; ObjectID = "c4s-Xr-7N8"; */
+"c4s-Xr-7N8.title" = "Sign Up";
+
+/* Class = "UINavigationItem"; title = "Diamond Club"; ObjectID = "g87-AH-xef"; */
+"g87-AH-xef.title" = "Diamond Club";
+
+/* Class = "UIViewController"; title = "Sing In"; ObjectID = "iBm-rw-yRg"; */
+"iBm-rw-yRg.title" = "Sing In";
+
+/* Class = "UITextField"; placeholder = "Confirm password"; ObjectID = "leh-HA-7EQ"; */
+"leh-HA-7EQ.placeholder" = "Confirm password";
+
+/* Class = "UITextField"; placeholder = "Login"; ObjectID = "pvs-7g-Pte"; */
+"pvs-7g-Pte.placeholder" = "Login";
+
+/* Class = "UITextField"; placeholder = "Password"; ObjectID = "xoN-oX-y3g"; */
+"xoN-oX-y3g.placeholder" = "Password";

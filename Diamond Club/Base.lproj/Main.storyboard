@@ -13,7 +13,7 @@
         <!--Diamond Club-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController storyboardIdentifier="ROOT" title="Diamond Club" id="BYZ-38-t0r" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="ROOT" title="Diamond Club" id="BYZ-38-t0r" customClass="DiamondClubRootViewController" customModule="Diamond_Club" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -21,6 +21,10 @@
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="backround" translatesAutoresizingMaskIntoConstraints="NO" id="5kv-ud-2RO">
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                             </imageView>
+                            <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" hidesWhenStopped="YES" animating="YES" style="gray" translatesAutoresizingMaskIntoConstraints="NO" id="ah1-cO-GaJ">
+                                <rect key="frame" x="177" y="323" width="20" height="20"/>
+                                <color key="color" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </activityIndicatorView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ByB-N6-Bg8" customClass="RoundedButton" customModule="Diamond_Club" customModuleProvider="target">
                                 <rect key="frame" x="122.5" y="288.5" width="130" height="34"/>
                                 <color key="backgroundColor" white="1" alpha="0.42259738869863012" colorSpace="calibratedWhite"/>
@@ -49,15 +53,22 @@
                             <constraint firstItem="5kv-ud-2RO" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="1Kv-Jn-S47"/>
                             <constraint firstItem="5kv-ud-2RO" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="2yN-ee-2tb"/>
                             <constraint firstAttribute="trailing" secondItem="5kv-ud-2RO" secondAttribute="trailing" id="5vV-e1-fG7"/>
+                            <constraint firstItem="ah1-cO-GaJ" firstAttribute="centerX" secondItem="5kv-ud-2RO" secondAttribute="centerX" id="CRh-GC-pBc"/>
                             <constraint firstItem="08O-wC-VVN" firstAttribute="centerX" secondItem="5kv-ud-2RO" secondAttribute="centerX" id="NOR-qs-FNl"/>
                             <constraint firstAttribute="bottom" secondItem="5kv-ud-2RO" secondAttribute="bottom" id="OtV-Kr-Dt3"/>
                             <constraint firstItem="ByB-N6-Bg8" firstAttribute="centerY" secondItem="5kv-ud-2RO" secondAttribute="centerY" constant="-28" id="RD2-8I-VhY"/>
                             <constraint firstItem="ByB-N6-Bg8" firstAttribute="centerX" secondItem="5kv-ud-2RO" secondAttribute="centerX" id="VwF-gz-Jet"/>
+                            <constraint firstItem="ah1-cO-GaJ" firstAttribute="centerY" secondItem="5kv-ud-2RO" secondAttribute="centerY" id="jF4-BT-zYs"/>
                             <constraint firstItem="08O-wC-VVN" firstAttribute="centerY" secondItem="5kv-ud-2RO" secondAttribute="centerY" constant="28" id="wlc-0F-i7m"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <navigationItem key="navigationItem" title="Diamond Club" id="g87-AH-xef"/>
+                    <connections>
+                        <outlet property="activityIndicatorView" destination="ah1-cO-GaJ" id="2Ap-cH-7QP"/>
+                        <outlet property="signUpButton" destination="08O-wC-VVN" id="0Mp-XE-HWa"/>
+                        <outlet property="singInButton" destination="ByB-N6-Bg8" id="d48-2M-ZB0"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
@@ -168,6 +179,8 @@
                         <outlet property="confirmPassword" destination="leh-HA-7EQ" id="2ZC-JN-SGQ"/>
                         <outlet property="login" destination="Gul-r5-6zc" id="CaJ-Tv-sdO"/>
                         <outlet property="password" destination="xoN-oX-y3g" id="qhN-Ng-FMV"/>
+                        <outlet property="scrollView" destination="llH-59-v3E" id="Mo7-oB-h9b"/>
+                        <outlet property="scrollViewBottom" destination="jwd-kJ-lio" id="IX6-Vl-4Mj"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="YVJ-2M-OnI" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -263,6 +276,7 @@
                     <connections>
                         <outlet property="loginField" destination="pvs-7g-Pte" id="8rs-Be-dli"/>
                         <outlet property="password" destination="QxB-Rb-pbd" id="GbK-nq-5yS"/>
+                        <outlet property="scrollViewBottom" destination="KlI-oU-zmH" id="i11-7d-gw8"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="FEO-uZ-bUl" userLabel="First Responder" sceneMemberID="firstResponder"/>

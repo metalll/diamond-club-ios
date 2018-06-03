@@ -10,9 +10,9 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <objects>
-        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="PartnersViewController" customModule="Diamond_Club" customModuleProvider="target">
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ContAgentOperationsViewController" customModule="Diamond_Club" customModuleProvider="target">
             <connections>
-                <outlet property="tableVIew" destination="JMq-J0-83j" id="53v-2b-gc5"/>
+                <outlet property="tableView" destination="fSD-oa-S1S" id="jAw-43-4i9"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>
@@ -21,17 +21,17 @@
             <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="grouped" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="18" sectionFooterHeight="18" translatesAutoresizingMaskIntoConstraints="NO" id="JMq-J0-83j">
-                    <rect key="frame" x="0.0" y="20" width="375" height="647"/>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="grouped" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="18" sectionFooterHeight="18" translatesAutoresizingMaskIntoConstraints="NO" id="fSD-oa-S1S">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                     <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
                 </tableView>
             </subviews>
             <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
             <constraints>
-                <constraint firstItem="JMq-J0-83j" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" id="7cF-vj-jbC"/>
-                <constraint firstItem="JMq-J0-83j" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="XO0-cF-DLS"/>
-                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="JMq-J0-83j" secondAttribute="trailing" id="dYU-RG-Tma"/>
-                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="JMq-J0-83j" secondAttribute="bottom" id="j0Q-P0-ao1"/>
+                <constraint firstItem="fSD-oa-S1S" firstAttribute="trailing" secondItem="fnl-2z-Ty3" secondAttribute="trailing" id="Lmc-nc-zjo"/>
+                <constraint firstItem="fSD-oa-S1S" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="LpH-uV-GMt"/>
+                <constraint firstItem="fSD-oa-S1S" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="iBC-nx-TsO"/>
+                <constraint firstItem="fSD-oa-S1S" firstAttribute="bottom" secondItem="fnl-2z-Ty3" secondAttribute="bottom" id="iOc-hc-zey"/>
             </constraints>
             <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
         </view>

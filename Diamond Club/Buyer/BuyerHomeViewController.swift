@@ -8,14 +8,14 @@
 
 import UIKit
 import MapKit
-
+import Alamofire
 
 class Artwork: NSObject, MKAnnotation {
     let title: String?
     let locationName: String
     let discipline: String
     let coordinate: CLLocationCoordinate2D
-    
+    public var id:Int32?
     init(title: String, locationName: String, discipline: String, coordinate: CLLocationCoordinate2D) {
         self.title = title
         self.locationName = locationName
@@ -30,35 +30,92 @@ class Artwork: NSObject, MKAnnotation {
     }
 }
 
-class BuyerHomeViewController: UIViewController {
+
+class BuyerHomeViewController: UIViewController,MKMapViewDelegate {
+    private var dataSource:[ContrAgent] = []
     
+    @IBOutlet weak var headerBottom: NSLayoutConstraint!
+        
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        self.mapView.delegate = self;
         self.navigationController?.navigationBar.barStyle = .blackTranslucent;
         self.navigationController?.navigationBar.isTranslucent = true;
         self.navigationController?.navigationBar.backgroundColor = UIColor.clear
         
-            self.navigationController?.navigationItem.title = "Diamond Club"
+        self.navigationController?.navigationItem.title = "Diamond Club"
+        self.title = "Diamond Club"
         
-            self.title = "Diamond Club"
         
-        let artwork = Artwork(title: "ContAgent",
-                              locationName: "Odessa",
-                              discipline: "Buy your shoose",
-                              coordinate: CLLocationCoordinate2D(latitude: 46.469391, longitude: 30.750883))
-        mapView.addAnnotation(artwork)
-        let artwork1 = Artwork(title: "Zum-zum",
-                                                            locationName: "Odessa",
-                                                            discipline: "Play",
-                                                            coordinate: CLLocationCoordinate2D(latitude: 46.489391, longitude: 30.740883))
-        mapView.addAnnotation(artwork1)
-        let artwork2 = Artwork(title: "Shop",
-                                                            locationName: "Odessa",
-                                                            discipline: "Buy eat",
-                                                            coordinate: CLLocationCoordinate2D(latitude: 46.489391, longitude: 30.720883))
-        mapView.addAnnotation(artwork2)
-        
+        if #available(iOS 11.0, *) {
+        } else {
+            headerBottom.constant = -64;
+        }
         // Do any additional setup after loading the view.
+        let parameters:Parameters = [:];
+        Alamofire.request("https://diamond-card.herokuapp.com/API/contragent/all" , method:.post, parameters: parameters).responseJSON { response in
+            
+            if (response.response?.statusCode == 200) {
+                
+                if let json = response.result.value as? [String: Any] {
+                    
+                    if let status = json["status"] as? String {
+                        
+                        if (status == "OK") {
+                            self.loadDataSorce(json["contrs"] as! [Any]);
+                            
+                        } else {
+                            
+                        }
+                    }
+                }
+            } else {
+                
+            }
+        }
+        return;
+        
+        
+    }
+    
+    private func loadSingleBuyer(_ fullInfo : [String : Any]) -> ContrAgent {
+        let contAgent = ContrAgent()
+        
+        
+        contAgent.contrAgentBalance = (fullInfo["contrAgentBalance"] as? String)!
+        contAgent.contrAgentName = (fullInfo["contrAgentName"] as? String)!
+        contAgent.foreingId = (fullInfo["foreingId"] as? Int32)!
+        contAgent.id = (fullInfo["id"] as? Int32)!
+        contAgent.image = (fullInfo["image"] as? String)!
+        contAgent.locationLatitude = (fullInfo["locationLatitude"] as? NSNumber)!.floatValue
+        contAgent.locationLongitude = (fullInfo["locationLongitude"] as? NSNumber)!.floatValue
+        contAgent.millisecondToAppruveCashback = (fullInfo["millisecondToAppruveCashback"] as? Int64)!
+        contAgent.percent =  (fullInfo["percent"] as? NSNumber)!.floatValue
+        contAgent.rating = (fullInfo["rating"] as? Float)!
+        
+        return contAgent;
+    }
+    
+    private func loadDataSorce(_ json:[Any]) {
+    self.mapView.removeAnnotations(self.mapView.annotations)
+        self.dataSource = [];
+        for item in json {
+            let tmpItem:[String : Any] = item as! [String : Any];
+            
+            let contr_agent = loadSingleBuyer(tmpItem)
+            self.dataSource.append(contr_agent);
+            
+            
+            let coord = CLLocationCoordinate2DMake(CLLocationDegrees(contr_agent.locationLatitude), CLLocationDegrees(contr_agent.locationLongitude))
+            
+            let artwork = Artwork(title:contr_agent.contrAgentName,
+                                  locationName: "",
+                                  discipline: "",
+                                  coordinate: coord)
+            artwork.id = contr_agent.id
+            self.mapView.addAnnotation(artwork)
+        }
     }
     
     override func didReceiveMemoryWarning() {
@@ -83,13 +140,11 @@ class BuyerHomeViewController: UIViewController {
         if let slideMenuController = self.slideMenuController() {
             if (slideMenuController.isRightOpen()) {
                 slideMenuController.closeRightNonAnimation();
-              
             }
               slideMenuController.openLeftWithVelocity(0.0);
         }
-        
     }
-
+        
      @IBAction func didTapPartners(_ sender: Any) {
             self.slideMenuController()?.navigationController?.pushViewController(PartnersViewController(), animated: true);
      }
