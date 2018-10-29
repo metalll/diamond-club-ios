@@ -16,7 +16,7 @@ class AuthorizationController: NSObject {
     
     public static var instance = AuthorizationController()
     
-    public let authEndpoint:String = "https://diamond-card.herokuapp.com/"
+    public let authEndpoint:String = "https://diamond-club.herokuapp.com/"
     
     private let loginPath:String = "login"
     private let registrationPath = "Reg"
@@ -109,11 +109,11 @@ class AuthorizationController: NSObject {
                 if let json = responce.result.value as? [String: Any] {
                     print("json \(json)")
                    
-                    if (json["status"] as! String == "BAD") {
+                    if (json["status"] as! String == "ERROR") {
                            completion(false);
                     } else {
                         delegate.registerForPushNotifications();
-                    if let data = json["responceData"] as? [String: Any] {
+                    if let data = json["responseData"] as? [String: Any] {
                         
                         if let role = data["role"] as? String {
                             

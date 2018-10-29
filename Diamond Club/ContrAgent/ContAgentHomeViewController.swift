@@ -12,6 +12,10 @@ import QRCodeReader
 import MFCard
 
 class ContAgentHomeViewController: UIViewController,QRCodeReaderViewControllerDelegate,MFCardDelegate  {
+    func cardDidClose() {
+        
+    }
+    
     @IBOutlet weak var nameLabel: UILabel!
     @IBOutlet weak var imageView: UIImageView!
     

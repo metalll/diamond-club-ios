@@ -61,7 +61,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate,UNUserNotificationCenterDe
                                      "development":"sandbox",
                                      "deviceUUID":UIDevice.current.identifierForVendor?.uuidString ?? "-1"]
         
-        Alamofire.request("https://diamond-card.herokuapp.com/API/subscribe", method:.post, parameters: parameters).responseJSON { response in
+        Alamofire.request("https://diamond-club.herokuapp.com/API/subscribe", method:.post, parameters: parameters).responseJSON { response in
             print("Notification responce: \(String(describing: response.result.value))")
         }
         

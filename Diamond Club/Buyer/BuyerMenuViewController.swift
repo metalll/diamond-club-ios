@@ -11,6 +11,10 @@ import MFCard
 
 
 class BuyerMenuViewController: UIViewController,MFCardDelegate {
+    func cardDidClose() {
+        
+    }
+    
     func cardDoneButtonClicked(_ card: Card?, error: String?) {
         
     }

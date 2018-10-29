@@ -27,7 +27,7 @@ class ContAgentOperationsViewController: UIViewController,UITableViewDataSource,
 
     private func loadActivites() {
         
-        Alamofire.request("https://diamond-card.herokuapp.com/API/activity" , method:.get).responseJSON { response in
+        Alamofire.request("https://diamond-club.herokuapp.com/API/activity" , method:.get).responseJSON { response in
 
             if (response.response?.statusCode == 200) {
                 

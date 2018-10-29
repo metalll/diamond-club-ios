@@ -1,12 +1,12 @@
 PODS:
-  - Alamofire (4.7.2)
-  - EFQRCode (4.2.1)
+  - Alamofire (4.7.3)
+  - EFQRCode (4.2.2)
   - EZLoadingActivity (1.01)
-  - MFCard (1.2.5)
+  - MFCard (1.2.6)
   - QRCode (2.0)
   - QRCodeReader.swift (8.1.1)
   - SlideMenuControllerSwift (4.0.0)
-  - TTGSnackbar (1.7.3)
+  - TTGSnackbar (1.7.5)
 
 DEPENDENCIES:
   - Alamofire (~> 4.6)
@@ -28,14 +28,14 @@ CHECKOUT OPTIONS:
     :git: https://github.com/goktugyil/EZLoadingActivity.git
 
 SPEC CHECKSUMS:
-  Alamofire: e4fa87002c137ba2d8d634d2c51fabcda0d5c223
-  EFQRCode: f3fd67049faa07adb575495c05d72a34e407a940
+  Alamofire: c7287b6e5d7da964a70935e5db17046b7fde6568
+  EFQRCode: 203846c7b135b5f7c1d18bb7923bc32a74c8b363
   EZLoadingActivity: edd7e387e5197b116ce2cccb3fd747ababc2a510
-  MFCard: f0daf3314c81ba70f493e7877b0cc1c69378527c
+  MFCard: a441d4f13b9d53b888b44108cb56b10bed766ca7
   QRCode: f98a1886c8f37523704a7512a4c0cd45b34c18a4
   QRCodeReader.swift: b164a681887de276d405ff02bce854d82cd6360b
   SlideMenuControllerSwift: 021d6318201c53d4d4d3710517d43d6c556c7dd0
-  TTGSnackbar: a66e929fd17d662152ec0964990a86e966310edb
+  TTGSnackbar: 2cf4e7b6ffbe5cddf248a73f3ee952b71bee8ea3
 
 PODFILE CHECKSUM: 55d18eb208636953240186ec8d0250b73e1c1bad
 

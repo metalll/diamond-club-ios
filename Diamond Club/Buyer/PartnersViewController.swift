@@ -22,7 +22,7 @@ class PartnersViewController: UIViewController, UITableViewDelegate ,UITableView
         self.tableVIew.dataSource = self;
         self.title = "Partners";
         let parameters:Parameters = [:];
-        Alamofire.request("https://diamond-card.herokuapp.com/API/contragent/all" , method:.post, parameters: parameters).responseJSON { response in
+        Alamofire.request("https://diamond-club.herokuapp.com/API/contragent/all" , method:.post, parameters: parameters).responseJSON { response in
             
             if (response.response?.statusCode == 200) {
                 

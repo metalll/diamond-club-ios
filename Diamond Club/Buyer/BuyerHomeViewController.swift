@@ -54,7 +54,7 @@ class BuyerHomeViewController: UIViewController,MKMapViewDelegate {
         }
         // Do any additional setup after loading the view.
         let parameters:Parameters = [:];
-        Alamofire.request("https://diamond-card.herokuapp.com/API/contragent/all" , method:.post, parameters: parameters).responseJSON { response in
+        Alamofire.request("https://diamond-club.herokuapp.com/API/contragent/all" , method:.post, parameters: parameters).responseJSON { response in
             
             if (response.response?.statusCode == 200) {
                 

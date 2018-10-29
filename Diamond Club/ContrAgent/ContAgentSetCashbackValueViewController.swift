@@ -43,7 +43,7 @@ class ContAgentSetCashbackValueViewController: UIViewController {
             let parameters:Parameters = ["userCashCard":target,
                                          "type":"CASHB",
                                          "value":textField.text ?? ""]
-            Alamofire.request("https://diamond-card.herokuapp.com/API/activity", method:.post, parameters: parameters).responseJSON { response in
+            Alamofire.request("https://diamond-club.herokuapp.com/API/activity", method:.post, parameters: parameters).responseJSON { response in
                 
                 if (response.response?.statusCode == 200) {
                     self.navigationController?.popViewController(animated: true)
